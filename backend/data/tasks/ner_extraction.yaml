@@ -1,0 +1,16 @@
+task_id: ner_extraction
+task_type: extraction
+description: >
+  Extract named entities from the given news snippet. Identify all person names,
+  organization names, and locations mentioned in the text.
+  Output as JSON: {"persons": [...], "organizations": [...], "locations": [...]}
+  If a category has no entities, use an empty list.
+input_schema:
+  type: text
+  description: A news snippet containing named entities
+output_schema:
+  type: json
+  format: '{"persons": [], "organizations": [], "locations": []}'
+evaluation_method: f1_score
+dataset_file: ner_dataset.json
+seed_strategy: format_constrained

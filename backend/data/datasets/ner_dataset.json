@@ -1,0 +1,602 @@
+[
+  {
+    "input": "Apple CEO Tim Cook announced a partnership with Samsung in Cupertino.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Apple\", \"Samsung\"], \"locations\": [\"Cupertino\"]}"
+  },
+  {
+    "input": "The United Nations Secretary-General Antonio Guterres spoke at the summit in Paris.",
+    "expected_output": "{\"persons\": [\"Antonio Guterres\"], \"organizations\": [\"United Nations\"], \"locations\": [\"Paris\"]}"
+  },
+  {
+    "input": "Elon Musk's SpaceX launched a rocket from Boca Chica, Texas.",
+    "expected_output": "{\"persons\": [\"Elon Musk\"], \"organizations\": [\"SpaceX\"], \"locations\": [\"Boca Chica\", \"Texas\"]}"
+  },
+  {
+    "input": "Microsoft acquired Activision Blizzard in the largest gaming deal.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Microsoft\", \"Activision Blizzard\"], \"locations\": []}"
+  },
+  {
+    "input": "President Biden met Prime Minister Modi at the White House.",
+    "expected_output": "{\"persons\": [\"Biden\", \"Modi\"], \"organizations\": [], \"locations\": [\"White House\"]}"
+  },
+  {
+    "input": "Google DeepMind researcher Demis Hassabis won the Nobel Prize in Stockholm.",
+    "expected_output": "{\"persons\": [\"Demis Hassabis\"], \"organizations\": [\"Google DeepMind\"], \"locations\": [\"Stockholm\"]}"
+  },
+  {
+    "input": "The WHO reported a new outbreak in Democratic Republic of Congo.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"WHO\"], \"locations\": [\"Democratic Republic of Congo\"]}"
+  },
+  {
+    "input": "Taylor Swift performed sold-out concerts in London, Tokyo, and Sydney.",
+    "expected_output": "{\"persons\": [\"Taylor Swift\"], \"organizations\": [], \"locations\": [\"London\", \"Tokyo\", \"Sydney\"]}"
+  },
+  {
+    "input": "Amazon Web Services opened a data center in Mumbai, India.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Amazon Web Services\"], \"locations\": [\"Mumbai\", \"India\"]}"
+  },
+  {
+    "input": "Sundar Pichai discussed AI safety with European Commission officials in Brussels.",
+    "expected_output": "{\"persons\": [\"Sundar Pichai\"], \"organizations\": [\"European Commission\"], \"locations\": [\"Brussels\"]}"
+  },
+  {
+    "input": "Tesla reported record sales in China.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Tesla\"], \"locations\": [\"China\"]}"
+  },
+  {
+    "input": "Mark Zuckerberg unveiled Meta's VR headset at their Menlo Park campus.",
+    "expected_output": "{\"persons\": [\"Mark Zuckerberg\"], \"organizations\": [\"Meta\"], \"locations\": [\"Menlo Park\"]}"
+  },
+  {
+    "input": "FIFA announced Saudi Arabia will host the 2034 World Cup.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"FIFA\"], \"locations\": [\"Saudi Arabia\"]}"
+  },
+  {
+    "input": "Warren Buffett's Berkshire Hathaway invested in Japanese companies.",
+    "expected_output": "{\"persons\": [\"Warren Buffett\"], \"organizations\": [\"Berkshire Hathaway\"], \"locations\": []}"
+  },
+  {
+    "input": "NVIDIA CEO Jensen Huang presented technology at CES in Las Vegas.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"NVIDIA\", \"CES\"], \"locations\": [\"Las Vegas\"]}"
+  },
+  {
+    "input": "The Red Cross deployed teams to Turkey after the earthquake.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Red Cross\"], \"locations\": [\"Turkey\"]}"
+  },
+  {
+    "input": "Samsung unveiled their smartphone at Mobile World Congress in Barcelona.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Samsung\", \"Mobile World Congress\"], \"locations\": [\"Barcelona\"]}"
+  },
+  {
+    "input": "Cristiano Ronaldo signed with Al Nassr in Riyadh.",
+    "expected_output": "{\"persons\": [\"Cristiano Ronaldo\"], \"organizations\": [\"Al Nassr\"], \"locations\": [\"Riyadh\"]}"
+  },
+  {
+    "input": "Greta Thunberg protested outside the Swedish Parliament in Stockholm.",
+    "expected_output": "{\"persons\": [\"Greta Thunberg\"], \"organizations\": [\"Swedish Parliament\"], \"locations\": [\"Stockholm\"]}"
+  },
+  {
+    "input": "OpenAI released a new model, prompting responses from Google and Microsoft.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"OpenAI\", \"Google\", \"Microsoft\"], \"locations\": []}"
+  },
+  {
+    "input": "Heavy rainfall caused flooding throughout the region.",
+    "expected_output": "{\"persons\": [], \"organizations\": [], \"locations\": []}"
+  },
+  {
+    "input": "Pep Guardiola led Manchester City to victory at Wembley Stadium.",
+    "expected_output": "{\"persons\": [\"Pep Guardiola\"], \"organizations\": [\"Manchester City\"], \"locations\": [\"Wembley Stadium\"]}"
+  },
+  {
+    "input": "Researchers at MIT and Stanford published a quantum computing study.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"MIT\", \"Stanford\"], \"locations\": []}"
+  },
+  {
+    "input": "Chancellor Olaf Scholz addressed the Bundestag in Berlin.",
+    "expected_output": "{\"persons\": [\"Olaf Scholz\"], \"organizations\": [\"Bundestag\"], \"locations\": [\"Berlin\"]}"
+  },
+  {
+    "input": "SpaceX and Boeing competed for the NASA contract at Cape Canaveral.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"SpaceX\", \"Boeing\", \"NASA\"], \"locations\": [\"Cape Canaveral\"]}"
+  },
+  {
+    "input": "Lionel Messi joined Inter Miami and played in Fort Lauderdale.",
+    "expected_output": "{\"persons\": [\"Lionel Messi\"], \"organizations\": [\"Inter Miami\"], \"locations\": [\"Fort Lauderdale\"]}"
+  },
+  {
+    "input": "Jeff Bezos and Blue Origin launched tourists from West Texas.",
+    "expected_output": "{\"persons\": [\"Jeff Bezos\"], \"organizations\": [\"Blue Origin\"], \"locations\": [\"West Texas\"]}"
+  },
+  {
+    "input": "French President Macron hosted Italian PM Meloni at the Elysee Palace.",
+    "expected_output": "{\"persons\": [\"Macron\", \"Meloni\"], \"organizations\": [], \"locations\": [\"Elysee Palace\"]}"
+  },
+  {
+    "input": "Toyota and Honda announced joint EV development in Detroit.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Toyota\", \"Honda\"], \"locations\": [\"Detroit\"]}"
+  },
+  {
+    "input": "Serena Williams retired after the US Open in New York.",
+    "expected_output": "{\"persons\": [\"Serena Williams\"], \"organizations\": [\"US Open\"], \"locations\": [\"New York\"]}"
+  },
+  {
+    "input": "Jack Ma returned to Alibaba's offices in Hangzhou.",
+    "expected_output": "{\"persons\": [\"Jack Ma\"], \"organizations\": [\"Alibaba\"], \"locations\": [\"Hangzhou\"]}"
+  },
+  {
+    "input": "NATO allies met in Brussels to discuss defense spending.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"NATO\"], \"locations\": [\"Brussels\"]}"
+  },
+  {
+    "input": "Beyonce broke Grammy records at the ceremony in Los Angeles.",
+    "expected_output": "{\"persons\": [\"Beyonce\"], \"organizations\": [\"Grammy\"], \"locations\": [\"Los Angeles\"]}"
+  },
+  {
+    "input": "LeBron James became the all-time leading scorer for the Lakers.",
+    "expected_output": "{\"persons\": [\"LeBron James\"], \"organizations\": [\"Lakers\"], \"locations\": []}"
+  },
+  {
+    "input": "Satya Nadella announced Azure expansions at Microsoft Build in Seattle.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Director Christopher Nolan premiered his film at the Cannes Film Festival.",
+    "expected_output": "{\"persons\": [\"Christopher Nolan\"], \"organizations\": [\"Cannes Film Festival\"], \"locations\": []}"
+  },
+  {
+    "input": "Goldman Sachs and JPMorgan reported record earnings on Wall Street.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Goldman Sachs\", \"JPMorgan\"], \"locations\": [\"Wall Street\"]}"
+  },
+  {
+    "input": "The Gates Foundation donated billions to fight malaria in Africa.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"Gates Foundation\"], \"locations\": [\"Africa\"]}"
+  },
+  {
+    "input": "Rafael Nadal announced retirement at a press conference in Madrid.",
+    "expected_output": "{\"persons\": [\"Rafael Nadal\"], \"organizations\": [], \"locations\": [\"Madrid\"]}"
+  },
+  {
+    "input": "Pope Francis addressed thousands at St. Peter's Square in Vatican City.",
+    "expected_output": "{\"persons\": [\"Pope Francis\"], \"organizations\": [], \"locations\": [\"St. Peter's Square\", \"Vatican City\"]}"
+  },
+  {
+    "input": "Sam Altman testified before the US Senate on AI regulation.",
+    "expected_output": "{\"persons\": [\"Sam Altman\"], \"organizations\": [\"US Senate\"], \"locations\": []}"
+  },
+  {
+    "input": "Rihanna performed at the Super Bowl halftime show in Arizona.",
+    "expected_output": "{\"persons\": [\"Rihanna\"], \"organizations\": [\"Super Bowl\"], \"locations\": [\"Arizona\"]}"
+  },
+  {
+    "input": "Novak Djokovic won the Australian Open in Melbourne.",
+    "expected_output": "{\"persons\": [\"Novak Djokovic\"], \"organizations\": [\"Australian Open\"], \"locations\": [\"Melbourne\"]}"
+  },
+  {
+    "input": "The ASEAN leaders met in Jakarta to discuss trade.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"ASEAN\"], \"locations\": [\"Jakarta\"]}"
+  },
+  {
+    "input": "Oprah Winfrey interviewed scientists in Santa Barbara.",
+    "expected_output": "{\"persons\": [\"Oprah Winfrey\"], \"organizations\": [], \"locations\": [\"Santa Barbara\"]}"
+  },
+  {
+    "input": "The European Space Agency launched from French Guiana.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"European Space Agency\"], \"locations\": [\"French Guiana\"]}"
+  },
+  {
+    "input": "Lewis Hamilton moved from Mercedes to Ferrari.",
+    "expected_output": "{\"persons\": [\"Lewis Hamilton\"], \"organizations\": [\"Mercedes\", \"Ferrari\"], \"locations\": []}"
+  },
+  {
+    "input": "Anthropic CEO Dario Amodei discussed AI alignment in San Francisco.",
+    "expected_output": "{\"persons\": [\"Dario Amodei\"], \"organizations\": [\"Anthropic\"], \"locations\": [\"San Francisco\"]}"
+  },
+  {
+    "input": "The World Bank approved loans for Nigeria and Kenya.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"World Bank\"], \"locations\": [\"Nigeria\", \"Kenya\"]}"
+  },
+  {
+    "input": "Swiss bank UBS completed the takeover of Credit Suisse in Zurich.",
+    "expected_output": "{\"persons\": [], \"organizations\": [\"UBS\", \"Credit Suisse\"], \"locations\": [\"Zurich\"]}"
+  },
+  {
+    "input": "Jensen Huang of AMD visited partners in Toronto.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"AMD\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Brian Chesky of Amazon gave a keynote in London.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"Amazon\"], \"locations\": [\"London\"]}"
+  },
+  {
+    "input": "Satya Nadella of IBM announced a new initiative at Austin.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"IBM\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Lisa Su of Microsoft visited partners in Singapore.",
+    "expected_output": "{\"persons\": [\"Lisa Su\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Arvind Krishna of Hewlett-Packard gave a keynote in San Jose.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"Hewlett-Packard\"], \"locations\": [\"San Jose\"]}"
+  },
+  {
+    "input": "Daniel Ek of Oracle visited partners in Austin.",
+    "expected_output": "{\"persons\": [\"Daniel Ek\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Mary Barra of IBM announced a new initiative at Toronto.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"IBM\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Reed Hastings of Treasury led a workshop in Munich.",
+    "expected_output": "{\"persons\": [\"Reed Hastings\"], \"organizations\": [\"Treasury\"], \"locations\": [\"Munich\"]}"
+  },
+  {
+    "input": "Andy Jassy of Spotify spoke at a conference in Munich.",
+    "expected_output": "{\"persons\": [\"Andy Jassy\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Munich\"]}"
+  },
+  {
+    "input": "Satya Nadella of ECB presented findings in London.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"ECB\"], \"locations\": [\"London\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Hewlett-Packard announced a new initiative at Toronto.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Hewlett-Packard\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Mary Barra of Oracle inaugurated a facility in London.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"Oracle\"], \"locations\": [\"London\"]}"
+  },
+  {
+    "input": "Satya Nadella of Oracle launched a product in Paris.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Paris\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of IBM spoke at a conference in Singapore.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"IBM\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Tim Cook of Airbnb spoke at a conference in Paris.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Paris\"]}"
+  },
+  {
+    "input": "Brian Chesky of NVIDIA led a workshop in Dublin.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Dublin\"]}"
+  },
+  {
+    "input": "Mary Barra of European Commission presented findings in Tokyo.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"European Commission\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Spotify spoke at a conference in Toronto.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Meg Whitman of Netflix visited partners in Miami.",
+    "expected_output": "{\"persons\": [\"Meg Whitman\"], \"organizations\": [\"Netflix\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Reed Hastings of General Motors led a workshop in Dublin.",
+    "expected_output": "{\"persons\": [\"Reed Hastings\"], \"organizations\": [\"General Motors\"], \"locations\": [\"Dublin\"]}"
+  },
+  {
+    "input": "Safra Catz of Airbnb announced a new initiative at Munich.",
+    "expected_output": "{\"persons\": [\"Safra Catz\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Munich\"]}"
+  },
+  {
+    "input": "Brian Chesky of Apple inaugurated a facility in Munich.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"Apple\"], \"locations\": [\"Munich\"]}"
+  },
+  {
+    "input": "Susan Wojcicki of Microsoft launched a product in Singapore.",
+    "expected_output": "{\"persons\": [\"Susan Wojcicki\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Bob Iger of Spotify inaugurated a facility in Boston.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Boston\"]}"
+  },
+  {
+    "input": "Mary Barra of Amazon opened new offices in Toronto.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"Amazon\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Brian Chesky of Oracle led a workshop in Miami.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Ginni Rometty of Treasury inaugurated a facility in Dallas.",
+    "expected_output": "{\"persons\": [\"Ginni Rometty\"], \"organizations\": [\"Treasury\"], \"locations\": [\"Dallas\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Airbnb gave a keynote in Berlin.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Berlin\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of Microsoft spoke at a conference in Seattle.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Andy Jassy of Netflix launched a product in Austin.",
+    "expected_output": "{\"persons\": [\"Andy Jassy\"], \"organizations\": [\"Netflix\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Satya Nadella of ECB launched a product in Dublin.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"ECB\"], \"locations\": [\"Dublin\"]}"
+  },
+  {
+    "input": "Mary Barra of IBM gave a keynote in Toronto.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"IBM\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Lisa Su of NVIDIA led a workshop in Miami.",
+    "expected_output": "{\"persons\": [\"Lisa Su\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Bob Iger of NVIDIA inaugurated a facility in Paris.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Paris\"]}"
+  },
+  {
+    "input": "Reed Hastings of General Motors led a workshop in San Jose.",
+    "expected_output": "{\"persons\": [\"Reed Hastings\"], \"organizations\": [\"General Motors\"], \"locations\": [\"San Jose\"]}"
+  },
+  {
+    "input": "Arvind Krishna of Netflix spoke at a conference in Denver.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"Netflix\"], \"locations\": [\"Denver\"]}"
+  },
+  {
+    "input": "Sheryl Sandberg of IBM visited partners in Atlanta.",
+    "expected_output": "{\"persons\": [\"Sheryl Sandberg\"], \"organizations\": [\"IBM\"], \"locations\": [\"Atlanta\"]}"
+  },
+  {
+    "input": "Andy Jassy of European Commission gave a keynote in Tokyo.",
+    "expected_output": "{\"persons\": [\"Andy Jassy\"], \"organizations\": [\"European Commission\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Arvind Krishna of AMD presented findings in Atlanta.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"AMD\"], \"locations\": [\"Atlanta\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of AMD presented findings in London.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"AMD\"], \"locations\": [\"London\"]}"
+  },
+  {
+    "input": "Sheryl Sandberg of Airbnb visited partners in Seattle.",
+    "expected_output": "{\"persons\": [\"Sheryl Sandberg\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Ginni Rometty of Microsoft hosted a summit in New York.",
+    "expected_output": "{\"persons\": [\"Ginni Rometty\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"New York\"]}"
+  },
+  {
+    "input": "Satya Nadella of Oracle opened new offices in Berlin.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Berlin\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of Oracle led a workshop in Tokyo.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Arvind Krishna of Hewlett-Packard visited partners in Austin.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"Hewlett-Packard\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Safra Catz of Spotify inaugurated a facility in Paris.",
+    "expected_output": "{\"persons\": [\"Safra Catz\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Paris\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of General Motors hosted a summit in Denver.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"General Motors\"], \"locations\": [\"Denver\"]}"
+  },
+  {
+    "input": "Jensen Huang of Airbnb spoke at a conference in Sydney.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Bob Iger of AMD gave a keynote in Dallas.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"AMD\"], \"locations\": [\"Dallas\"]}"
+  },
+  {
+    "input": "Brian Chesky of IBM announced a new initiative at Sydney.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"IBM\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Satya Nadella of Apple spoke at a conference in Sydney.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Apple\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Tim Cook of Disney gave a keynote in New York.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Disney\"], \"locations\": [\"New York\"]}"
+  },
+  {
+    "input": "Brian Chesky of YouTube visited partners in Boston.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Boston\"]}"
+  },
+  {
+    "input": "Safra Catz of Amazon launched a product in Dallas.",
+    "expected_output": "{\"persons\": [\"Safra Catz\"], \"organizations\": [\"Amazon\"], \"locations\": [\"Dallas\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of Airbnb inaugurated a facility in Boston.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Boston\"]}"
+  },
+  {
+    "input": "Daniel Ek of NVIDIA inaugurated a facility in London.",
+    "expected_output": "{\"persons\": [\"Daniel Ek\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"London\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Treasury hosted a summit in Austin.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Treasury\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Tim Cook of NVIDIA inaugurated a facility in Seattle.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Bob Iger of NVIDIA visited partners in Sydney.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Daniel Ek of Oracle opened new offices in Chicago.",
+    "expected_output": "{\"persons\": [\"Daniel Ek\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Chicago\"]}"
+  },
+  {
+    "input": "Janet Yellen of Netflix hosted a summit in Toronto.",
+    "expected_output": "{\"persons\": [\"Janet Yellen\"], \"organizations\": [\"Netflix\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Brian Chesky of Microsoft gave a keynote in Chicago.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Chicago\"]}"
+  },
+  {
+    "input": "Jensen Huang of Apple announced a new initiative at Miami.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"Apple\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Satya Nadella of Airbnb inaugurated a facility in Tokyo.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of Intel inaugurated a facility in Singapore.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"Intel\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Tim Cook of Netflix announced a new initiative at Dublin.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Netflix\"], \"locations\": [\"Dublin\"]}"
+  },
+  {
+    "input": "Christine Lagarde of YouTube led a workshop in Chicago.",
+    "expected_output": "{\"persons\": [\"Christine Lagarde\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Chicago\"]}"
+  },
+  {
+    "input": "Janet Yellen of Oracle opened new offices in Boston.",
+    "expected_output": "{\"persons\": [\"Janet Yellen\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Boston\"]}"
+  },
+  {
+    "input": "Daniel Ek of Facebook announced a new initiative at Singapore.",
+    "expected_output": "{\"persons\": [\"Daniel Ek\"], \"organizations\": [\"Facebook\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Ginni Rometty of Oracle presented findings in Seattle.",
+    "expected_output": "{\"persons\": [\"Ginni Rometty\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Tim Cook of Apple hosted a summit in Dallas.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Apple\"], \"locations\": [\"Dallas\"]}"
+  },
+  {
+    "input": "Arvind Krishna of IBM announced a new initiative at Tokyo.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"IBM\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Arvind Krishna of Microsoft spoke at a conference in Tokyo.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Tokyo\"]}"
+  },
+  {
+    "input": "Meg Whitman of Microsoft inaugurated a facility in Sydney.",
+    "expected_output": "{\"persons\": [\"Meg Whitman\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Jensen Huang of IBM launched a product in Sydney.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"IBM\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Meg Whitman of Apple spoke at a conference in Atlanta.",
+    "expected_output": "{\"persons\": [\"Meg Whitman\"], \"organizations\": [\"Apple\"], \"locations\": [\"Atlanta\"]}"
+  },
+  {
+    "input": "Janet Yellen of IBM gave a keynote in Dallas.",
+    "expected_output": "{\"persons\": [\"Janet Yellen\"], \"organizations\": [\"IBM\"], \"locations\": [\"Dallas\"]}"
+  },
+  {
+    "input": "Bob Iger of YouTube presented findings in Singapore.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Singapore\"]}"
+  },
+  {
+    "input": "Brian Chesky of YouTube opened new offices in Dublin.",
+    "expected_output": "{\"persons\": [\"Brian Chesky\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Dublin\"]}"
+  },
+  {
+    "input": "Sheryl Sandberg of General Motors spoke at a conference in Munich.",
+    "expected_output": "{\"persons\": [\"Sheryl Sandberg\"], \"organizations\": [\"General Motors\"], \"locations\": [\"Munich\"]}"
+  },
+  {
+    "input": "Lisa Su of General Motors launched a product in Atlanta.",
+    "expected_output": "{\"persons\": [\"Lisa Su\"], \"organizations\": [\"General Motors\"], \"locations\": [\"Atlanta\"]}"
+  },
+  {
+    "input": "Jensen Huang of Microsoft visited partners in Miami.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"Microsoft\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Arvind Krishna of YouTube presented findings in Berlin.",
+    "expected_output": "{\"persons\": [\"Arvind Krishna\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Berlin\"]}"
+  },
+  {
+    "input": "Satya Nadella of Airbnb led a workshop in Amsterdam.",
+    "expected_output": "{\"persons\": [\"Satya Nadella\"], \"organizations\": [\"Airbnb\"], \"locations\": [\"Amsterdam\"]}"
+  },
+  {
+    "input": "Reed Hastings of General Motors led a workshop in Miami.",
+    "expected_output": "{\"persons\": [\"Reed Hastings\"], \"organizations\": [\"General Motors\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Meg Whitman of IBM gave a keynote in San Jose.",
+    "expected_output": "{\"persons\": [\"Meg Whitman\"], \"organizations\": [\"IBM\"], \"locations\": [\"San Jose\"]}"
+  },
+  {
+    "input": "Sheryl Sandberg of NVIDIA led a workshop in Berlin.",
+    "expected_output": "{\"persons\": [\"Sheryl Sandberg\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Berlin\"]}"
+  },
+  {
+    "input": "Jensen Huang of NVIDIA opened new offices in Miami.",
+    "expected_output": "{\"persons\": [\"Jensen Huang\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"Miami\"]}"
+  },
+  {
+    "input": "Susan Wojcicki of Facebook visited partners in Atlanta.",
+    "expected_output": "{\"persons\": [\"Susan Wojcicki\"], \"organizations\": [\"Facebook\"], \"locations\": [\"Atlanta\"]}"
+  },
+  {
+    "input": "Bob Iger of Spotify gave a keynote in Toronto.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Pat Gelsinger of YouTube spoke at a conference in Seattle.",
+    "expected_output": "{\"persons\": [\"Pat Gelsinger\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Janet Yellen of YouTube announced a new initiative at Seattle.",
+    "expected_output": "{\"persons\": [\"Janet Yellen\"], \"organizations\": [\"YouTube\"], \"locations\": [\"Seattle\"]}"
+  },
+  {
+    "input": "Bob Iger of Amazon opened new offices in Toronto.",
+    "expected_output": "{\"persons\": [\"Bob Iger\"], \"organizations\": [\"Amazon\"], \"locations\": [\"Toronto\"]}"
+  },
+  {
+    "input": "Mary Barra of Oracle gave a keynote in Austin.",
+    "expected_output": "{\"persons\": [\"Mary Barra\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Lisa Su of NVIDIA opened new offices in New York.",
+    "expected_output": "{\"persons\": [\"Lisa Su\"], \"organizations\": [\"NVIDIA\"], \"locations\": [\"New York\"]}"
+  },
+  {
+    "input": "Safra Catz of Apple launched a product in Amsterdam.",
+    "expected_output": "{\"persons\": [\"Safra Catz\"], \"organizations\": [\"Apple\"], \"locations\": [\"Amsterdam\"]}"
+  },
+  {
+    "input": "Safra Catz of Amazon opened new offices in Austin.",
+    "expected_output": "{\"persons\": [\"Safra Catz\"], \"organizations\": [\"Amazon\"], \"locations\": [\"Austin\"]}"
+  },
+  {
+    "input": "Tim Cook of Facebook announced a new initiative at Amsterdam.",
+    "expected_output": "{\"persons\": [\"Tim Cook\"], \"organizations\": [\"Facebook\"], \"locations\": [\"Amsterdam\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Spotify spoke at a conference in Sydney.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Spotify\"], \"locations\": [\"Sydney\"]}"
+  },
+  {
+    "input": "Ursula von der Leyen of Oracle launched a product in Austin.",
+    "expected_output": "{\"persons\": [\"Ursula von der Leyen\"], \"organizations\": [\"Oracle\"], \"locations\": [\"Austin\"]}"
+  }
+]

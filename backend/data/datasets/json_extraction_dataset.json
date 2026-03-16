@@ -1,0 +1,482 @@
+[
+  {
+    "input": "Check out the Ultra-Slim Laptop Pro 15! This amazing electronics product costs just $1299.99. Key features include: 15-inch display, 16GB RAM, 512GB SSD.",
+    "expected_output": "{\"name\": \"Ultra-Slim Laptop Pro 15\", \"category\": \"electronics\", \"price\": 1299.99, \"features\": [\"15-inch display\", \"16GB RAM\", \"512GB SSD\"]}"
+  },
+  {
+    "input": "Introducing the Ultra-Slim Laptop Pro 15, priced at $1299.99. This electronics item offers 15-inch display, 16GB RAM, and 512GB SSD.",
+    "expected_output": "{\"name\": \"Ultra-Slim Laptop Pro 15\", \"category\": \"electronics\", \"price\": 1299.99, \"features\": [\"15-inch display\", \"16GB RAM\", \"512GB SSD\"]}"
+  },
+  {
+    "input": "The Ultra-Slim Laptop Pro 15 is a great electronics product at $1299.99. It features 15-inch display and 16GB RAM, plus 512GB SSD.",
+    "expected_output": "{\"name\": \"Ultra-Slim Laptop Pro 15\", \"category\": \"electronics\", \"price\": 1299.99, \"features\": [\"15-inch display\", \"16GB RAM\", \"512GB SSD\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Ultra-Slim Laptop Pro 15 at $1299.99 delivers 15-inch display, 16GB RAM, and 512GB SSD.",
+    "expected_output": "{\"name\": \"Ultra-Slim Laptop Pro 15\", \"category\": \"electronics\", \"price\": 1299.99, \"features\": [\"15-inch display\", \"16GB RAM\", \"512GB SSD\"]}"
+  },
+  {
+    "input": "Check out the Wireless Noise-Canceling Headphones X500! This amazing electronics product costs just $249.99. Key features include: active noise cancellation, 30-hour battery, Bluetooth 5.0.",
+    "expected_output": "{\"name\": \"Wireless Noise-Canceling Headphones X500\", \"category\": \"electronics\", \"price\": 249.99, \"features\": [\"active noise cancellation\", \"30-hour battery\", \"Bluetooth 5.0\"]}"
+  },
+  {
+    "input": "Introducing the Wireless Noise-Canceling Headphones X500, priced at $249.99. This electronics item offers active noise cancellation, 30-hour battery, and Bluetooth 5.0.",
+    "expected_output": "{\"name\": \"Wireless Noise-Canceling Headphones X500\", \"category\": \"electronics\", \"price\": 249.99, \"features\": [\"active noise cancellation\", \"30-hour battery\", \"Bluetooth 5.0\"]}"
+  },
+  {
+    "input": "The Wireless Noise-Canceling Headphones X500 is a great electronics product at $249.99. It features active noise cancellation and 30-hour battery, plus Bluetooth 5.0.",
+    "expected_output": "{\"name\": \"Wireless Noise-Canceling Headphones X500\", \"category\": \"electronics\", \"price\": 249.99, \"features\": [\"active noise cancellation\", \"30-hour battery\", \"Bluetooth 5.0\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Wireless Noise-Canceling Headphones X500 at $249.99 delivers active noise cancellation, 30-hour battery, and Bluetooth 5.0.",
+    "expected_output": "{\"name\": \"Wireless Noise-Canceling Headphones X500\", \"category\": \"electronics\", \"price\": 249.99, \"features\": [\"active noise cancellation\", \"30-hour battery\", \"Bluetooth 5.0\"]}"
+  },
+  {
+    "input": "Check out the Organic Cotton T-Shirt! This amazing clothing product costs just $29.99. Key features include: 100% organic cotton, machine washable, available in 8 colors.",
+    "expected_output": "{\"name\": \"Organic Cotton T-Shirt\", \"category\": \"clothing\", \"price\": 29.99, \"features\": [\"100% organic cotton\", \"machine washable\", \"available in 8 colors\"]}"
+  },
+  {
+    "input": "Introducing the Organic Cotton T-Shirt, priced at $29.99. This clothing item offers 100% organic cotton, machine washable, and available in 8 colors.",
+    "expected_output": "{\"name\": \"Organic Cotton T-Shirt\", \"category\": \"clothing\", \"price\": 29.99, \"features\": [\"100% organic cotton\", \"machine washable\", \"available in 8 colors\"]}"
+  },
+  {
+    "input": "The Organic Cotton T-Shirt is a great clothing product at $29.99. It features 100% organic cotton and machine washable, plus available in 8 colors.",
+    "expected_output": "{\"name\": \"Organic Cotton T-Shirt\", \"category\": \"clothing\", \"price\": 29.99, \"features\": [\"100% organic cotton\", \"machine washable\", \"available in 8 colors\"]}"
+  },
+  {
+    "input": "Looking for clothing? The Organic Cotton T-Shirt at $29.99 delivers 100% organic cotton, machine washable, and available in 8 colors.",
+    "expected_output": "{\"name\": \"Organic Cotton T-Shirt\", \"category\": \"clothing\", \"price\": 29.99, \"features\": [\"100% organic cotton\", \"machine washable\", \"available in 8 colors\"]}"
+  },
+  {
+    "input": "Check out the Smart Fitness Watch Pro! This amazing electronics product costs just $199.99. Key features include: heart rate monitor, GPS tracking, 7-day battery.",
+    "expected_output": "{\"name\": \"Smart Fitness Watch Pro\", \"category\": \"electronics\", \"price\": 199.99, \"features\": [\"heart rate monitor\", \"GPS tracking\", \"7-day battery\"]}"
+  },
+  {
+    "input": "Introducing the Smart Fitness Watch Pro, priced at $199.99. This electronics item offers heart rate monitor, GPS tracking, and 7-day battery.",
+    "expected_output": "{\"name\": \"Smart Fitness Watch Pro\", \"category\": \"electronics\", \"price\": 199.99, \"features\": [\"heart rate monitor\", \"GPS tracking\", \"7-day battery\"]}"
+  },
+  {
+    "input": "The Smart Fitness Watch Pro is a great electronics product at $199.99. It features heart rate monitor and GPS tracking, plus 7-day battery.",
+    "expected_output": "{\"name\": \"Smart Fitness Watch Pro\", \"category\": \"electronics\", \"price\": 199.99, \"features\": [\"heart rate monitor\", \"GPS tracking\", \"7-day battery\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Smart Fitness Watch Pro at $199.99 delivers heart rate monitor, GPS tracking, and 7-day battery.",
+    "expected_output": "{\"name\": \"Smart Fitness Watch Pro\", \"category\": \"electronics\", \"price\": 199.99, \"features\": [\"heart rate monitor\", \"GPS tracking\", \"7-day battery\"]}"
+  },
+  {
+    "input": "Check out the Premium Yoga Mat! This amazing sports product costs just $59.99. Key features include: non-slip surface, 6mm thick, eco-friendly material.",
+    "expected_output": "{\"name\": \"Premium Yoga Mat\", \"category\": \"sports\", \"price\": 59.99, \"features\": [\"non-slip surface\", \"6mm thick\", \"eco-friendly material\"]}"
+  },
+  {
+    "input": "Introducing the Premium Yoga Mat, priced at $59.99. This sports item offers non-slip surface, 6mm thick, and eco-friendly material.",
+    "expected_output": "{\"name\": \"Premium Yoga Mat\", \"category\": \"sports\", \"price\": 59.99, \"features\": [\"non-slip surface\", \"6mm thick\", \"eco-friendly material\"]}"
+  },
+  {
+    "input": "The Premium Yoga Mat is a great sports product at $59.99. It features non-slip surface and 6mm thick, plus eco-friendly material.",
+    "expected_output": "{\"name\": \"Premium Yoga Mat\", \"category\": \"sports\", \"price\": 59.99, \"features\": [\"non-slip surface\", \"6mm thick\", \"eco-friendly material\"]}"
+  },
+  {
+    "input": "Looking for sports? The Premium Yoga Mat at $59.99 delivers non-slip surface, 6mm thick, and eco-friendly material.",
+    "expected_output": "{\"name\": \"Premium Yoga Mat\", \"category\": \"sports\", \"price\": 59.99, \"features\": [\"non-slip surface\", \"6mm thick\", \"eco-friendly material\"]}"
+  },
+  {
+    "input": "Check out the Artisan Dark Chocolate Bar! This amazing food product costs just $8.99. Key features include: 72% cacao, fair trade, gluten free.",
+    "expected_output": "{\"name\": \"Artisan Dark Chocolate Bar\", \"category\": \"food\", \"price\": 8.99, \"features\": [\"72% cacao\", \"fair trade\", \"gluten free\"]}"
+  },
+  {
+    "input": "Introducing the Artisan Dark Chocolate Bar, priced at $8.99. This food item offers 72% cacao, fair trade, and gluten free.",
+    "expected_output": "{\"name\": \"Artisan Dark Chocolate Bar\", \"category\": \"food\", \"price\": 8.99, \"features\": [\"72% cacao\", \"fair trade\", \"gluten free\"]}"
+  },
+  {
+    "input": "The Artisan Dark Chocolate Bar is a great food product at $8.99. It features 72% cacao and fair trade, plus gluten free.",
+    "expected_output": "{\"name\": \"Artisan Dark Chocolate Bar\", \"category\": \"food\", \"price\": 8.99, \"features\": [\"72% cacao\", \"fair trade\", \"gluten free\"]}"
+  },
+  {
+    "input": "Looking for food? The Artisan Dark Chocolate Bar at $8.99 delivers 72% cacao, fair trade, and gluten free.",
+    "expected_output": "{\"name\": \"Artisan Dark Chocolate Bar\", \"category\": \"food\", \"price\": 8.99, \"features\": [\"72% cacao\", \"fair trade\", \"gluten free\"]}"
+  },
+  {
+    "input": "Check out the Ergonomic Office Chair! This amazing home product costs just $449.99. Key features include: lumbar support, adjustable height, breathable mesh.",
+    "expected_output": "{\"name\": \"Ergonomic Office Chair\", \"category\": \"home\", \"price\": 449.99, \"features\": [\"lumbar support\", \"adjustable height\", \"breathable mesh\"]}"
+  },
+  {
+    "input": "Introducing the Ergonomic Office Chair, priced at $449.99. This home item offers lumbar support, adjustable height, and breathable mesh.",
+    "expected_output": "{\"name\": \"Ergonomic Office Chair\", \"category\": \"home\", \"price\": 449.99, \"features\": [\"lumbar support\", \"adjustable height\", \"breathable mesh\"]}"
+  },
+  {
+    "input": "The Ergonomic Office Chair is a great home product at $449.99. It features lumbar support and adjustable height, plus breathable mesh.",
+    "expected_output": "{\"name\": \"Ergonomic Office Chair\", \"category\": \"home\", \"price\": 449.99, \"features\": [\"lumbar support\", \"adjustable height\", \"breathable mesh\"]}"
+  },
+  {
+    "input": "Looking for home? The Ergonomic Office Chair at $449.99 delivers lumbar support, adjustable height, and breathable mesh.",
+    "expected_output": "{\"name\": \"Ergonomic Office Chair\", \"category\": \"home\", \"price\": 449.99, \"features\": [\"lumbar support\", \"adjustable height\", \"breathable mesh\"]}"
+  },
+  {
+    "input": "Check out the Running Shoes UltraBoost! This amazing sports product costs just $179.99. Key features include: responsive cushioning, breathable knit, continental rubber sole.",
+    "expected_output": "{\"name\": \"Running Shoes UltraBoost\", \"category\": \"sports\", \"price\": 179.99, \"features\": [\"responsive cushioning\", \"breathable knit\", \"continental rubber sole\"]}"
+  },
+  {
+    "input": "Introducing the Running Shoes UltraBoost, priced at $179.99. This sports item offers responsive cushioning, breathable knit, and continental rubber sole.",
+    "expected_output": "{\"name\": \"Running Shoes UltraBoost\", \"category\": \"sports\", \"price\": 179.99, \"features\": [\"responsive cushioning\", \"breathable knit\", \"continental rubber sole\"]}"
+  },
+  {
+    "input": "The Running Shoes UltraBoost is a great sports product at $179.99. It features responsive cushioning and breathable knit, plus continental rubber sole.",
+    "expected_output": "{\"name\": \"Running Shoes UltraBoost\", \"category\": \"sports\", \"price\": 179.99, \"features\": [\"responsive cushioning\", \"breathable knit\", \"continental rubber sole\"]}"
+  },
+  {
+    "input": "Looking for sports? The Running Shoes UltraBoost at $179.99 delivers responsive cushioning, breathable knit, and continental rubber sole.",
+    "expected_output": "{\"name\": \"Running Shoes UltraBoost\", \"category\": \"sports\", \"price\": 179.99, \"features\": [\"responsive cushioning\", \"breathable knit\", \"continental rubber sole\"]}"
+  },
+  {
+    "input": "Check out the Stainless Steel Water Bottle! This amazing sports product costs just $24.99. Key features include: double-wall insulation, keeps cold 24 hours, BPA free.",
+    "expected_output": "{\"name\": \"Stainless Steel Water Bottle\", \"category\": \"sports\", \"price\": 24.99, \"features\": [\"double-wall insulation\", \"keeps cold 24 hours\", \"BPA free\"]}"
+  },
+  {
+    "input": "Introducing the Stainless Steel Water Bottle, priced at $24.99. This sports item offers double-wall insulation, keeps cold 24 hours, and BPA free.",
+    "expected_output": "{\"name\": \"Stainless Steel Water Bottle\", \"category\": \"sports\", \"price\": 24.99, \"features\": [\"double-wall insulation\", \"keeps cold 24 hours\", \"BPA free\"]}"
+  },
+  {
+    "input": "The Stainless Steel Water Bottle is a great sports product at $24.99. It features double-wall insulation and keeps cold 24 hours, plus BPA free.",
+    "expected_output": "{\"name\": \"Stainless Steel Water Bottle\", \"category\": \"sports\", \"price\": 24.99, \"features\": [\"double-wall insulation\", \"keeps cold 24 hours\", \"BPA free\"]}"
+  },
+  {
+    "input": "Looking for sports? The Stainless Steel Water Bottle at $24.99 delivers double-wall insulation, keeps cold 24 hours, and BPA free.",
+    "expected_output": "{\"name\": \"Stainless Steel Water Bottle\", \"category\": \"sports\", \"price\": 24.99, \"features\": [\"double-wall insulation\", \"keeps cold 24 hours\", \"BPA free\"]}"
+  },
+  {
+    "input": "Check out the Memory Foam Pillow Set! This amazing home product costs just $39.99. Key features include: hypoallergenic, machine washable cover, cooling gel.",
+    "expected_output": "{\"name\": \"Memory Foam Pillow Set\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"hypoallergenic\", \"machine washable cover\", \"cooling gel\"]}"
+  },
+  {
+    "input": "Introducing the Memory Foam Pillow Set, priced at $39.99. This home item offers hypoallergenic, machine washable cover, and cooling gel.",
+    "expected_output": "{\"name\": \"Memory Foam Pillow Set\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"hypoallergenic\", \"machine washable cover\", \"cooling gel\"]}"
+  },
+  {
+    "input": "The Memory Foam Pillow Set is a great home product at $39.99. It features hypoallergenic and machine washable cover, plus cooling gel.",
+    "expected_output": "{\"name\": \"Memory Foam Pillow Set\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"hypoallergenic\", \"machine washable cover\", \"cooling gel\"]}"
+  },
+  {
+    "input": "Looking for home? The Memory Foam Pillow Set at $39.99 delivers hypoallergenic, machine washable cover, and cooling gel.",
+    "expected_output": "{\"name\": \"Memory Foam Pillow Set\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"hypoallergenic\", \"machine washable cover\", \"cooling gel\"]}"
+  },
+  {
+    "input": "Check out the 4K Action Camera! This amazing electronics product costs just $299.99. Key features include: 4K 60fps video, waterproof to 10m, image stabilization.",
+    "expected_output": "{\"name\": \"4K Action Camera\", \"category\": \"electronics\", \"price\": 299.99, \"features\": [\"4K 60fps video\", \"waterproof to 10m\", \"image stabilization\"]}"
+  },
+  {
+    "input": "Introducing the 4K Action Camera, priced at $299.99. This electronics item offers 4K 60fps video, waterproof to 10m, and image stabilization.",
+    "expected_output": "{\"name\": \"4K Action Camera\", \"category\": \"electronics\", \"price\": 299.99, \"features\": [\"4K 60fps video\", \"waterproof to 10m\", \"image stabilization\"]}"
+  },
+  {
+    "input": "The 4K Action Camera is a great electronics product at $299.99. It features 4K 60fps video and waterproof to 10m, plus image stabilization.",
+    "expected_output": "{\"name\": \"4K Action Camera\", \"category\": \"electronics\", \"price\": 299.99, \"features\": [\"4K 60fps video\", \"waterproof to 10m\", \"image stabilization\"]}"
+  },
+  {
+    "input": "Looking for electronics? The 4K Action Camera at $299.99 delivers 4K 60fps video, waterproof to 10m, and image stabilization.",
+    "expected_output": "{\"name\": \"4K Action Camera\", \"category\": \"electronics\", \"price\": 299.99, \"features\": [\"4K 60fps video\", \"waterproof to 10m\", \"image stabilization\"]}"
+  },
+  {
+    "input": "Check out the Organic Green Tea Collection! This amazing food product costs just $14.99. Key features include: 12 varieties, organic certified, individually wrapped.",
+    "expected_output": "{\"name\": \"Organic Green Tea Collection\", \"category\": \"food\", \"price\": 14.99, \"features\": [\"12 varieties\", \"organic certified\", \"individually wrapped\"]}"
+  },
+  {
+    "input": "Introducing the Organic Green Tea Collection, priced at $14.99. This food item offers 12 varieties, organic certified, and individually wrapped.",
+    "expected_output": "{\"name\": \"Organic Green Tea Collection\", \"category\": \"food\", \"price\": 14.99, \"features\": [\"12 varieties\", \"organic certified\", \"individually wrapped\"]}"
+  },
+  {
+    "input": "The Organic Green Tea Collection is a great food product at $14.99. It features 12 varieties and organic certified, plus individually wrapped.",
+    "expected_output": "{\"name\": \"Organic Green Tea Collection\", \"category\": \"food\", \"price\": 14.99, \"features\": [\"12 varieties\", \"organic certified\", \"individually wrapped\"]}"
+  },
+  {
+    "input": "Looking for food? The Organic Green Tea Collection at $14.99 delivers 12 varieties, organic certified, and individually wrapped.",
+    "expected_output": "{\"name\": \"Organic Green Tea Collection\", \"category\": \"food\", \"price\": 14.99, \"features\": [\"12 varieties\", \"organic certified\", \"individually wrapped\"]}"
+  },
+  {
+    "input": "Check out the Wool Winter Coat! This amazing clothing product costs just $189.99. Key features include: pure wool blend, water resistant, inner lining.",
+    "expected_output": "{\"name\": \"Wool Winter Coat\", \"category\": \"clothing\", \"price\": 189.99, \"features\": [\"pure wool blend\", \"water resistant\", \"inner lining\"]}"
+  },
+  {
+    "input": "Introducing the Wool Winter Coat, priced at $189.99. This clothing item offers pure wool blend, water resistant, and inner lining.",
+    "expected_output": "{\"name\": \"Wool Winter Coat\", \"category\": \"clothing\", \"price\": 189.99, \"features\": [\"pure wool blend\", \"water resistant\", \"inner lining\"]}"
+  },
+  {
+    "input": "The Wool Winter Coat is a great clothing product at $189.99. It features pure wool blend and water resistant, plus inner lining.",
+    "expected_output": "{\"name\": \"Wool Winter Coat\", \"category\": \"clothing\", \"price\": 189.99, \"features\": [\"pure wool blend\", \"water resistant\", \"inner lining\"]}"
+  },
+  {
+    "input": "Looking for clothing? The Wool Winter Coat at $189.99 delivers pure wool blend, water resistant, and inner lining.",
+    "expected_output": "{\"name\": \"Wool Winter Coat\", \"category\": \"clothing\", \"price\": 189.99, \"features\": [\"pure wool blend\", \"water resistant\", \"inner lining\"]}"
+  },
+  {
+    "input": "Check out the Smart Home Speaker! This amazing electronics product costs just $89.99. Key features include: voice assistant, multi-room audio, smart home control.",
+    "expected_output": "{\"name\": \"Smart Home Speaker\", \"category\": \"electronics\", \"price\": 89.99, \"features\": [\"voice assistant\", \"multi-room audio\", \"smart home control\"]}"
+  },
+  {
+    "input": "Introducing the Smart Home Speaker, priced at $89.99. This electronics item offers voice assistant, multi-room audio, and smart home control.",
+    "expected_output": "{\"name\": \"Smart Home Speaker\", \"category\": \"electronics\", \"price\": 89.99, \"features\": [\"voice assistant\", \"multi-room audio\", \"smart home control\"]}"
+  },
+  {
+    "input": "The Smart Home Speaker is a great electronics product at $89.99. It features voice assistant and multi-room audio, plus smart home control.",
+    "expected_output": "{\"name\": \"Smart Home Speaker\", \"category\": \"electronics\", \"price\": 89.99, \"features\": [\"voice assistant\", \"multi-room audio\", \"smart home control\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Smart Home Speaker at $89.99 delivers voice assistant, multi-room audio, and smart home control.",
+    "expected_output": "{\"name\": \"Smart Home Speaker\", \"category\": \"electronics\", \"price\": 89.99, \"features\": [\"voice assistant\", \"multi-room audio\", \"smart home control\"]}"
+  },
+  {
+    "input": "Check out the Bamboo Cutting Board Set! This amazing home product costs just $34.99. Key features include: set of 3 sizes, antimicrobial, knife-friendly.",
+    "expected_output": "{\"name\": \"Bamboo Cutting Board Set\", \"category\": \"home\", \"price\": 34.99, \"features\": [\"set of 3 sizes\", \"antimicrobial\", \"knife-friendly\"]}"
+  },
+  {
+    "input": "Introducing the Bamboo Cutting Board Set, priced at $34.99. This home item offers set of 3 sizes, antimicrobial, and knife-friendly.",
+    "expected_output": "{\"name\": \"Bamboo Cutting Board Set\", \"category\": \"home\", \"price\": 34.99, \"features\": [\"set of 3 sizes\", \"antimicrobial\", \"knife-friendly\"]}"
+  },
+  {
+    "input": "The Bamboo Cutting Board Set is a great home product at $34.99. It features set of 3 sizes and antimicrobial, plus knife-friendly.",
+    "expected_output": "{\"name\": \"Bamboo Cutting Board Set\", \"category\": \"home\", \"price\": 34.99, \"features\": [\"set of 3 sizes\", \"antimicrobial\", \"knife-friendly\"]}"
+  },
+  {
+    "input": "Looking for home? The Bamboo Cutting Board Set at $34.99 delivers set of 3 sizes, antimicrobial, and knife-friendly.",
+    "expected_output": "{\"name\": \"Bamboo Cutting Board Set\", \"category\": \"home\", \"price\": 34.99, \"features\": [\"set of 3 sizes\", \"antimicrobial\", \"knife-friendly\"]}"
+  },
+  {
+    "input": "Check out the Trail Running Backpack! This amazing sports product costs just $69.99. Key features include: hydration compatible, lightweight, reflective details.",
+    "expected_output": "{\"name\": \"Trail Running Backpack\", \"category\": \"sports\", \"price\": 69.99, \"features\": [\"hydration compatible\", \"lightweight\", \"reflective details\"]}"
+  },
+  {
+    "input": "Introducing the Trail Running Backpack, priced at $69.99. This sports item offers hydration compatible, lightweight, and reflective details.",
+    "expected_output": "{\"name\": \"Trail Running Backpack\", \"category\": \"sports\", \"price\": 69.99, \"features\": [\"hydration compatible\", \"lightweight\", \"reflective details\"]}"
+  },
+  {
+    "input": "The Trail Running Backpack is a great sports product at $69.99. It features hydration compatible and lightweight, plus reflective details.",
+    "expected_output": "{\"name\": \"Trail Running Backpack\", \"category\": \"sports\", \"price\": 69.99, \"features\": [\"hydration compatible\", \"lightweight\", \"reflective details\"]}"
+  },
+  {
+    "input": "Looking for sports? The Trail Running Backpack at $69.99 delivers hydration compatible, lightweight, and reflective details.",
+    "expected_output": "{\"name\": \"Trail Running Backpack\", \"category\": \"sports\", \"price\": 69.99, \"features\": [\"hydration compatible\", \"lightweight\", \"reflective details\"]}"
+  },
+  {
+    "input": "Check out the Protein Bar Variety Pack! This amazing food product costs just $24.99. Key features include: 20g protein, 12 bars, low sugar.",
+    "expected_output": "{\"name\": \"Protein Bar Variety Pack\", \"category\": \"food\", \"price\": 24.99, \"features\": [\"20g protein\", \"12 bars\", \"low sugar\"]}"
+  },
+  {
+    "input": "Introducing the Protein Bar Variety Pack, priced at $24.99. This food item offers 20g protein, 12 bars, and low sugar.",
+    "expected_output": "{\"name\": \"Protein Bar Variety Pack\", \"category\": \"food\", \"price\": 24.99, \"features\": [\"20g protein\", \"12 bars\", \"low sugar\"]}"
+  },
+  {
+    "input": "The Protein Bar Variety Pack is a great food product at $24.99. It features 20g protein and 12 bars, plus low sugar.",
+    "expected_output": "{\"name\": \"Protein Bar Variety Pack\", \"category\": \"food\", \"price\": 24.99, \"features\": [\"20g protein\", \"12 bars\", \"low sugar\"]}"
+  },
+  {
+    "input": "Looking for food? The Protein Bar Variety Pack at $24.99 delivers 20g protein, 12 bars, and low sugar.",
+    "expected_output": "{\"name\": \"Protein Bar Variety Pack\", \"category\": \"food\", \"price\": 24.99, \"features\": [\"20g protein\", \"12 bars\", \"low sugar\"]}"
+  },
+  {
+    "input": "Check out the Linen Summer Dress! This amazing clothing product costs just $79.99. Key features include: 100% linen, relaxed fit, side pockets.",
+    "expected_output": "{\"name\": \"Linen Summer Dress\", \"category\": \"clothing\", \"price\": 79.99, \"features\": [\"100% linen\", \"relaxed fit\", \"side pockets\"]}"
+  },
+  {
+    "input": "Introducing the Linen Summer Dress, priced at $79.99. This clothing item offers 100% linen, relaxed fit, and side pockets.",
+    "expected_output": "{\"name\": \"Linen Summer Dress\", \"category\": \"clothing\", \"price\": 79.99, \"features\": [\"100% linen\", \"relaxed fit\", \"side pockets\"]}"
+  },
+  {
+    "input": "The Linen Summer Dress is a great clothing product at $79.99. It features 100% linen and relaxed fit, plus side pockets.",
+    "expected_output": "{\"name\": \"Linen Summer Dress\", \"category\": \"clothing\", \"price\": 79.99, \"features\": [\"100% linen\", \"relaxed fit\", \"side pockets\"]}"
+  },
+  {
+    "input": "Looking for clothing? The Linen Summer Dress at $79.99 delivers 100% linen, relaxed fit, and side pockets.",
+    "expected_output": "{\"name\": \"Linen Summer Dress\", \"category\": \"clothing\", \"price\": 79.99, \"features\": [\"100% linen\", \"relaxed fit\", \"side pockets\"]}"
+  },
+  {
+    "input": "Check out the Robot Vacuum Cleaner! This amazing electronics product costs just $399.99. Key features include: laser navigation, self-emptying, app control.",
+    "expected_output": "{\"name\": \"Robot Vacuum Cleaner\", \"category\": \"electronics\", \"price\": 399.99, \"features\": [\"laser navigation\", \"self-emptying\", \"app control\"]}"
+  },
+  {
+    "input": "Introducing the Robot Vacuum Cleaner, priced at $399.99. This electronics item offers laser navigation, self-emptying, and app control.",
+    "expected_output": "{\"name\": \"Robot Vacuum Cleaner\", \"category\": \"electronics\", \"price\": 399.99, \"features\": [\"laser navigation\", \"self-emptying\", \"app control\"]}"
+  },
+  {
+    "input": "The Robot Vacuum Cleaner is a great electronics product at $399.99. It features laser navigation and self-emptying, plus app control.",
+    "expected_output": "{\"name\": \"Robot Vacuum Cleaner\", \"category\": \"electronics\", \"price\": 399.99, \"features\": [\"laser navigation\", \"self-emptying\", \"app control\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Robot Vacuum Cleaner at $399.99 delivers laser navigation, self-emptying, and app control.",
+    "expected_output": "{\"name\": \"Robot Vacuum Cleaner\", \"category\": \"electronics\", \"price\": 399.99, \"features\": [\"laser navigation\", \"self-emptying\", \"app control\"]}"
+  },
+  {
+    "input": "Check out the Ceramic Plant Pot Set! This amazing home product costs just $44.99. Key features include: set of 4, drainage holes, modern design.",
+    "expected_output": "{\"name\": \"Ceramic Plant Pot Set\", \"category\": \"home\", \"price\": 44.99, \"features\": [\"set of 4\", \"drainage holes\", \"modern design\"]}"
+  },
+  {
+    "input": "Introducing the Ceramic Plant Pot Set, priced at $44.99. This home item offers set of 4, drainage holes, and modern design.",
+    "expected_output": "{\"name\": \"Ceramic Plant Pot Set\", \"category\": \"home\", \"price\": 44.99, \"features\": [\"set of 4\", \"drainage holes\", \"modern design\"]}"
+  },
+  {
+    "input": "The Ceramic Plant Pot Set is a great home product at $44.99. It features set of 4 and drainage holes, plus modern design.",
+    "expected_output": "{\"name\": \"Ceramic Plant Pot Set\", \"category\": \"home\", \"price\": 44.99, \"features\": [\"set of 4\", \"drainage holes\", \"modern design\"]}"
+  },
+  {
+    "input": "Looking for home? The Ceramic Plant Pot Set at $44.99 delivers set of 4, drainage holes, and modern design.",
+    "expected_output": "{\"name\": \"Ceramic Plant Pot Set\", \"category\": \"home\", \"price\": 44.99, \"features\": [\"set of 4\", \"drainage holes\", \"modern design\"]}"
+  },
+  {
+    "input": "Check out the Tennis Racket Pro! This amazing sports product costs just $159.99. Key features include: graphite frame, pre-strung, vibration dampening.",
+    "expected_output": "{\"name\": \"Tennis Racket Pro\", \"category\": \"sports\", \"price\": 159.99, \"features\": [\"graphite frame\", \"pre-strung\", \"vibration dampening\"]}"
+  },
+  {
+    "input": "Introducing the Tennis Racket Pro, priced at $159.99. This sports item offers graphite frame, pre-strung, and vibration dampening.",
+    "expected_output": "{\"name\": \"Tennis Racket Pro\", \"category\": \"sports\", \"price\": 159.99, \"features\": [\"graphite frame\", \"pre-strung\", \"vibration dampening\"]}"
+  },
+  {
+    "input": "The Tennis Racket Pro is a great sports product at $159.99. It features graphite frame and pre-strung, plus vibration dampening.",
+    "expected_output": "{\"name\": \"Tennis Racket Pro\", \"category\": \"sports\", \"price\": 159.99, \"features\": [\"graphite frame\", \"pre-strung\", \"vibration dampening\"]}"
+  },
+  {
+    "input": "Looking for sports? The Tennis Racket Pro at $159.99 delivers graphite frame, pre-strung, and vibration dampening.",
+    "expected_output": "{\"name\": \"Tennis Racket Pro\", \"category\": \"sports\", \"price\": 159.99, \"features\": [\"graphite frame\", \"pre-strung\", \"vibration dampening\"]}"
+  },
+  {
+    "input": "Check out the Cold Brew Coffee Kit! This amazing food product costs just $32.99. Key features include: glass carafe, stainless steel filter, recipe book.",
+    "expected_output": "{\"name\": \"Cold Brew Coffee Kit\", \"category\": \"food\", \"price\": 32.99, \"features\": [\"glass carafe\", \"stainless steel filter\", \"recipe book\"]}"
+  },
+  {
+    "input": "Introducing the Cold Brew Coffee Kit, priced at $32.99. This food item offers glass carafe, stainless steel filter, and recipe book.",
+    "expected_output": "{\"name\": \"Cold Brew Coffee Kit\", \"category\": \"food\", \"price\": 32.99, \"features\": [\"glass carafe\", \"stainless steel filter\", \"recipe book\"]}"
+  },
+  {
+    "input": "The Cold Brew Coffee Kit is a great food product at $32.99. It features glass carafe and stainless steel filter, plus recipe book.",
+    "expected_output": "{\"name\": \"Cold Brew Coffee Kit\", \"category\": \"food\", \"price\": 32.99, \"features\": [\"glass carafe\", \"stainless steel filter\", \"recipe book\"]}"
+  },
+  {
+    "input": "Looking for food? The Cold Brew Coffee Kit at $32.99 delivers glass carafe, stainless steel filter, and recipe book.",
+    "expected_output": "{\"name\": \"Cold Brew Coffee Kit\", \"category\": \"food\", \"price\": 32.99, \"features\": [\"glass carafe\", \"stainless steel filter\", \"recipe book\"]}"
+  },
+  {
+    "input": "Check out the Down Puffer Jacket! This amazing clothing product costs just $149.99. Key features include: 700-fill down, packable, water resistant.",
+    "expected_output": "{\"name\": \"Down Puffer Jacket\", \"category\": \"clothing\", \"price\": 149.99, \"features\": [\"700-fill down\", \"packable\", \"water resistant\"]}"
+  },
+  {
+    "input": "Introducing the Down Puffer Jacket, priced at $149.99. This clothing item offers 700-fill down, packable, and water resistant.",
+    "expected_output": "{\"name\": \"Down Puffer Jacket\", \"category\": \"clothing\", \"price\": 149.99, \"features\": [\"700-fill down\", \"packable\", \"water resistant\"]}"
+  },
+  {
+    "input": "The Down Puffer Jacket is a great clothing product at $149.99. It features 700-fill down and packable, plus water resistant.",
+    "expected_output": "{\"name\": \"Down Puffer Jacket\", \"category\": \"clothing\", \"price\": 149.99, \"features\": [\"700-fill down\", \"packable\", \"water resistant\"]}"
+  },
+  {
+    "input": "Looking for clothing? The Down Puffer Jacket at $149.99 delivers 700-fill down, packable, and water resistant.",
+    "expected_output": "{\"name\": \"Down Puffer Jacket\", \"category\": \"clothing\", \"price\": 149.99, \"features\": [\"700-fill down\", \"packable\", \"water resistant\"]}"
+  },
+  {
+    "input": "Check out the Wireless Charging Pad! This amazing electronics product costs just $29.99. Key features include: 15W fast charge, LED indicator, universal compatibility.",
+    "expected_output": "{\"name\": \"Wireless Charging Pad\", \"category\": \"electronics\", \"price\": 29.99, \"features\": [\"15W fast charge\", \"LED indicator\", \"universal compatibility\"]}"
+  },
+  {
+    "input": "Introducing the Wireless Charging Pad, priced at $29.99. This electronics item offers 15W fast charge, LED indicator, and universal compatibility.",
+    "expected_output": "{\"name\": \"Wireless Charging Pad\", \"category\": \"electronics\", \"price\": 29.99, \"features\": [\"15W fast charge\", \"LED indicator\", \"universal compatibility\"]}"
+  },
+  {
+    "input": "The Wireless Charging Pad is a great electronics product at $29.99. It features 15W fast charge and LED indicator, plus universal compatibility.",
+    "expected_output": "{\"name\": \"Wireless Charging Pad\", \"category\": \"electronics\", \"price\": 29.99, \"features\": [\"15W fast charge\", \"LED indicator\", \"universal compatibility\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Wireless Charging Pad at $29.99 delivers 15W fast charge, LED indicator, and universal compatibility.",
+    "expected_output": "{\"name\": \"Wireless Charging Pad\", \"category\": \"electronics\", \"price\": 29.99, \"features\": [\"15W fast charge\", \"LED indicator\", \"universal compatibility\"]}"
+  },
+  {
+    "input": "Check out the Aromatherapy Diffuser! This amazing home product costs just $39.99. Key features include: ultrasonic, 7 LED colors, auto shutoff.",
+    "expected_output": "{\"name\": \"Aromatherapy Diffuser\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"ultrasonic\", \"7 LED colors\", \"auto shutoff\"]}"
+  },
+  {
+    "input": "Introducing the Aromatherapy Diffuser, priced at $39.99. This home item offers ultrasonic, 7 LED colors, and auto shutoff.",
+    "expected_output": "{\"name\": \"Aromatherapy Diffuser\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"ultrasonic\", \"7 LED colors\", \"auto shutoff\"]}"
+  },
+  {
+    "input": "The Aromatherapy Diffuser is a great home product at $39.99. It features ultrasonic and 7 LED colors, plus auto shutoff.",
+    "expected_output": "{\"name\": \"Aromatherapy Diffuser\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"ultrasonic\", \"7 LED colors\", \"auto shutoff\"]}"
+  },
+  {
+    "input": "Looking for home? The Aromatherapy Diffuser at $39.99 delivers ultrasonic, 7 LED colors, and auto shutoff.",
+    "expected_output": "{\"name\": \"Aromatherapy Diffuser\", \"category\": \"home\", \"price\": 39.99, \"features\": [\"ultrasonic\", \"7 LED colors\", \"auto shutoff\"]}"
+  },
+  {
+    "input": "Check out the Basketball Indoor/Outdoor! This amazing sports product costs just $34.99. Key features include: synthetic leather, official size, deep channels.",
+    "expected_output": "{\"name\": \"Basketball Indoor/Outdoor\", \"category\": \"sports\", \"price\": 34.99, \"features\": [\"synthetic leather\", \"official size\", \"deep channels\"]}"
+  },
+  {
+    "input": "Introducing the Basketball Indoor/Outdoor, priced at $34.99. This sports item offers synthetic leather, official size, and deep channels.",
+    "expected_output": "{\"name\": \"Basketball Indoor/Outdoor\", \"category\": \"sports\", \"price\": 34.99, \"features\": [\"synthetic leather\", \"official size\", \"deep channels\"]}"
+  },
+  {
+    "input": "The Basketball Indoor/Outdoor is a great sports product at $34.99. It features synthetic leather and official size, plus deep channels.",
+    "expected_output": "{\"name\": \"Basketball Indoor/Outdoor\", \"category\": \"sports\", \"price\": 34.99, \"features\": [\"synthetic leather\", \"official size\", \"deep channels\"]}"
+  },
+  {
+    "input": "Looking for sports? The Basketball Indoor/Outdoor at $34.99 delivers synthetic leather, official size, and deep channels.",
+    "expected_output": "{\"name\": \"Basketball Indoor/Outdoor\", \"category\": \"sports\", \"price\": 34.99, \"features\": [\"synthetic leather\", \"official size\", \"deep channels\"]}"
+  },
+  {
+    "input": "Check out the Gourmet Pasta Sampler! This amazing food product costs just $19.99. Key features include: 6 varieties, imported from Italy, artisan made.",
+    "expected_output": "{\"name\": \"Gourmet Pasta Sampler\", \"category\": \"food\", \"price\": 19.99, \"features\": [\"6 varieties\", \"imported from Italy\", \"artisan made\"]}"
+  },
+  {
+    "input": "Introducing the Gourmet Pasta Sampler, priced at $19.99. This food item offers 6 varieties, imported from Italy, and artisan made.",
+    "expected_output": "{\"name\": \"Gourmet Pasta Sampler\", \"category\": \"food\", \"price\": 19.99, \"features\": [\"6 varieties\", \"imported from Italy\", \"artisan made\"]}"
+  },
+  {
+    "input": "The Gourmet Pasta Sampler is a great food product at $19.99. It features 6 varieties and imported from Italy, plus artisan made.",
+    "expected_output": "{\"name\": \"Gourmet Pasta Sampler\", \"category\": \"food\", \"price\": 19.99, \"features\": [\"6 varieties\", \"imported from Italy\", \"artisan made\"]}"
+  },
+  {
+    "input": "Looking for food? The Gourmet Pasta Sampler at $19.99 delivers 6 varieties, imported from Italy, and artisan made.",
+    "expected_output": "{\"name\": \"Gourmet Pasta Sampler\", \"category\": \"food\", \"price\": 19.99, \"features\": [\"6 varieties\", \"imported from Italy\", \"artisan made\"]}"
+  },
+  {
+    "input": "Check out the Cashmere Scarf! This amazing clothing product costs just $89.99. Key features include: 100% cashmere, hand-finished, gift boxed.",
+    "expected_output": "{\"name\": \"Cashmere Scarf\", \"category\": \"clothing\", \"price\": 89.99, \"features\": [\"100% cashmere\", \"hand-finished\", \"gift boxed\"]}"
+  },
+  {
+    "input": "Introducing the Cashmere Scarf, priced at $89.99. This clothing item offers 100% cashmere, hand-finished, and gift boxed.",
+    "expected_output": "{\"name\": \"Cashmere Scarf\", \"category\": \"clothing\", \"price\": 89.99, \"features\": [\"100% cashmere\", \"hand-finished\", \"gift boxed\"]}"
+  },
+  {
+    "input": "The Cashmere Scarf is a great clothing product at $89.99. It features 100% cashmere and hand-finished, plus gift boxed.",
+    "expected_output": "{\"name\": \"Cashmere Scarf\", \"category\": \"clothing\", \"price\": 89.99, \"features\": [\"100% cashmere\", \"hand-finished\", \"gift boxed\"]}"
+  },
+  {
+    "input": "Looking for clothing? The Cashmere Scarf at $89.99 delivers 100% cashmere, hand-finished, and gift boxed.",
+    "expected_output": "{\"name\": \"Cashmere Scarf\", \"category\": \"clothing\", \"price\": 89.99, \"features\": [\"100% cashmere\", \"hand-finished\", \"gift boxed\"]}"
+  },
+  {
+    "input": "Check out the Portable Bluetooth Speaker! This amazing electronics product costs just $59.99. Key features include: 12-hour battery, waterproof IPX7, 360-degree sound.",
+    "expected_output": "{\"name\": \"Portable Bluetooth Speaker\", \"category\": \"electronics\", \"price\": 59.99, \"features\": [\"12-hour battery\", \"waterproof IPX7\", \"360-degree sound\"]}"
+  },
+  {
+    "input": "Introducing the Portable Bluetooth Speaker, priced at $59.99. This electronics item offers 12-hour battery, waterproof IPX7, and 360-degree sound.",
+    "expected_output": "{\"name\": \"Portable Bluetooth Speaker\", \"category\": \"electronics\", \"price\": 59.99, \"features\": [\"12-hour battery\", \"waterproof IPX7\", \"360-degree sound\"]}"
+  },
+  {
+    "input": "The Portable Bluetooth Speaker is a great electronics product at $59.99. It features 12-hour battery and waterproof IPX7, plus 360-degree sound.",
+    "expected_output": "{\"name\": \"Portable Bluetooth Speaker\", \"category\": \"electronics\", \"price\": 59.99, \"features\": [\"12-hour battery\", \"waterproof IPX7\", \"360-degree sound\"]}"
+  },
+  {
+    "input": "Looking for electronics? The Portable Bluetooth Speaker at $59.99 delivers 12-hour battery, waterproof IPX7, and 360-degree sound.",
+    "expected_output": "{\"name\": \"Portable Bluetooth Speaker\", \"category\": \"electronics\", \"price\": 59.99, \"features\": [\"12-hour battery\", \"waterproof IPX7\", \"360-degree sound\"]}"
+  },
+  {
+    "input": "Check out the Weighted Blanket! This amazing home product costs just $79.99. Key features include: 15 pounds, glass bead filling, removable cover.",
+    "expected_output": "{\"name\": \"Weighted Blanket\", \"category\": \"home\", \"price\": 79.99, \"features\": [\"15 pounds\", \"glass bead filling\", \"removable cover\"]}"
+  },
+  {
+    "input": "Introducing the Weighted Blanket, priced at $79.99. This home item offers 15 pounds, glass bead filling, and removable cover.",
+    "expected_output": "{\"name\": \"Weighted Blanket\", \"category\": \"home\", \"price\": 79.99, \"features\": [\"15 pounds\", \"glass bead filling\", \"removable cover\"]}"
+  },
+  {
+    "input": "The Weighted Blanket is a great home product at $79.99. It features 15 pounds and glass bead filling, plus removable cover.",
+    "expected_output": "{\"name\": \"Weighted Blanket\", \"category\": \"home\", \"price\": 79.99, \"features\": [\"15 pounds\", \"glass bead filling\", \"removable cover\"]}"
+  },
+  {
+    "input": "Looking for home? The Weighted Blanket at $79.99 delivers 15 pounds, glass bead filling, and removable cover.",
+    "expected_output": "{\"name\": \"Weighted Blanket\", \"category\": \"home\", \"price\": 79.99, \"features\": [\"15 pounds\", \"glass bead filling\", \"removable cover\"]}"
+  }
+]

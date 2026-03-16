@@ -1,0 +1,16 @@
+task_id: sentiment_classification
+task_type: classification
+description: >
+  Classify the sentiment of the given movie review as either "positive" or "negative".
+  The review may contain mixed opinions — focus on the overall sentiment.
+  Output exactly one word: either "positive" or "negative".
+input_schema:
+  type: text
+  description: A movie review text
+output_schema:
+  type: label
+  format: "positive or negative (single word)"
+  labels: [positive, negative]
+evaluation_method: exact_match
+dataset_file: sentiment_dataset.json
+seed_strategy: role_based

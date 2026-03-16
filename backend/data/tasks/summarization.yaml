@@ -1,0 +1,15 @@
+task_id: summarization
+task_type: generation
+description: >
+  Summarize the given paragraph in 1-2 sentences. The summary should capture
+  the main point and key details. Be concise and factual — do not add
+  information not present in the original text.
+input_schema:
+  type: text
+  description: A paragraph of text to summarize
+output_schema:
+  type: text
+  format: "1-2 sentence summary"
+evaluation_method: f1_score
+dataset_file: summarization_dataset.json
+seed_strategy: zero_shot

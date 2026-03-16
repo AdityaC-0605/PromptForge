@@ -1,0 +1,16 @@
+task_id: math_word_problems
+task_type: qa
+description: >
+  Solve the given math word problem. The problem involves basic arithmetic
+  (addition, subtraction, multiplication, division).
+  Output ONLY the final numeric answer with no units, symbols, or explanation.
+  For example, if the answer is 42, output just: 42
+input_schema:
+  type: text
+  description: A grade-school math word problem
+output_schema:
+  type: number
+  format: "A single number (integer or decimal)"
+evaluation_method: contains_match
+dataset_file: math_dataset.json
+seed_strategy: chain_of_thought

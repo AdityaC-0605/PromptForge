@@ -1,0 +1,306 @@
+[
+  {
+    "input": "The Amazon rainforest, often referred to as the lungs of the planet, produces about 20 percent of the world's oxygen. Spanning across nine countries in South America, it is the largest tropical rainforest on Earth, home to an estimated 10 percent of all species. However, deforestation has accelerated in recent decades due to agriculture, logging, and infrastructure development, threatening the biodiversity and climate regulation functions of this vital ecosystem.",
+    "expected_output": "The Amazon rainforest produces 20% of the world's oxygen and houses 10% of all species, but deforestation from agriculture and logging threatens its biodiversity and climate regulation functions."
+  },
+  {
+    "input": "Artificial intelligence has transformed the healthcare industry by enabling faster and more accurate diagnostics. Machine learning algorithms can now detect diseases like cancer from medical images with accuracy rivaling experienced radiologists. AI-powered drug discovery has shortened the development timeline from decades to years, and virtual health assistants provide round-the-clock patient support.",
+    "expected_output": "AI has revolutionized healthcare through improved diagnostics, faster drug discovery, and virtual health assistants that provide constant patient support."
+  },
+  {
+    "input": "The Great Barrier Reef, located off the coast of Queensland, Australia, is the world's largest coral reef system. It stretches over 2,300 kilometers and supports a vast array of marine life. Rising ocean temperatures caused by climate change have led to successive mass bleaching events, threatening the survival of the reef and the thousands of species that depend on it.",
+    "expected_output": "The Great Barrier Reef is the world's largest coral reef system, but rising ocean temperatures have caused mass bleaching events that threaten its survival and biodiversity."
+  },
+  {
+    "input": "Remote work became the norm for millions of people during the pandemic, leading to a fundamental shift in workplace culture. Companies discovered that productivity often increased when employees worked from home, while workers appreciated the flexibility and elimination of long commutes. However, challenges such as isolation, blurred work-life boundaries, and collaboration difficulties have prompted many organizations to adopt hybrid models.",
+    "expected_output": "The pandemic normalized remote work, revealing productivity gains and flexibility benefits, though challenges like isolation and collaboration difficulties have led many companies to adopt hybrid models."
+  },
+  {
+    "input": "Quantum computing represents a paradigm shift in computational power. Unlike classical computers that use bits as 0 or 1, quantum computers use qubits that can exist in multiple states simultaneously through superposition. This enables them to solve certain complex problems exponentially faster. Major companies like IBM, Google, and Microsoft are racing to build practical quantum computers, though significant technical hurdles remain.",
+    "expected_output": "Quantum computing uses qubits and superposition to solve complex problems exponentially faster than classical computers, with major tech companies racing to overcome remaining technical challenges."
+  },
+  {
+    "input": "The Renaissance was a transformative period in European history, spanning roughly from the 14th to the 17th century. It began in Italy and spread across Europe, bringing a renewed interest in classical Greek and Roman art, literature, and philosophy. This cultural movement gave rise to legendary figures like Leonardo da Vinci and Michelangelo and laid the groundwork for modern science and humanism.",
+    "expected_output": "The Renaissance was a cultural movement from the 14th-17th century that revived classical art and philosophy, producing legendary figures like da Vinci and Michelangelo while laying the foundations for modern science."
+  },
+  {
+    "input": "Electric vehicles are rapidly gaining market share as battery technology improves and prices decrease. Government incentives, stricter emissions regulations, and growing environmental awareness are driving consumer adoption. Major automakers have committed billions to EV development, with some planning to phase out internal combustion engines entirely within the next decade.",
+    "expected_output": "Electric vehicles are gaining market share due to better batteries, lower prices, government incentives, and stricter regulations, with major automakers investing billions and planning to phase out combustion engines."
+  },
+  {
+    "input": "Sleep is essential for physical health, cognitive function, and emotional well-being. Adults typically need 7-9 hours per night, yet studies show that about one-third of adults regularly get less than the recommended amount. Chronic sleep deprivation is linked to obesity, heart disease, depression, and impaired immune function. Establishing consistent sleep schedules and limiting screen time before bed can significantly improve sleep quality.",
+    "expected_output": "Adults need 7-9 hours of sleep but many get less, with chronic deprivation linked to obesity, heart disease, and depression. Consistent schedules and reduced screen time can improve sleep quality."
+  },
+  {
+    "input": "The Silk Road was an ancient network of trade routes connecting China to the Mediterranean, facilitating not only the exchange of goods like silk, spices, and precious metals, but also the spread of ideas, religions, and technologies between East and West. Active for nearly 1,500 years, it played a crucial role in shaping the cultural and economic landscape of Eurasia.",
+    "expected_output": "The Silk Road was an ancient trade network connecting China to the Mediterranean that facilitated exchange of goods, ideas, and technologies between East and West for nearly 1,500 years."
+  },
+  {
+    "input": "Microplastics have been found in virtually every environment on Earth, from the deepest ocean trenches to the highest mountain peaks. These tiny plastic particles, less than 5 millimeters in size, originate from the breakdown of larger plastic waste, synthetic clothing fibers, and industrial processes. Research suggests they may pose risks to human health through ingestion of contaminated water and food, though the full extent of these risks is still being studied.",
+    "expected_output": "Microplastics are found everywhere on Earth, originating from plastic waste and synthetic fibers. They may pose human health risks through contaminated water and food, though research on the full extent continues."
+  },
+  {
+    "input": "Blockchain technology, originally developed for cryptocurrency, has found applications in supply chain management, healthcare records, voting systems, and digital identity verification. Its decentralized nature eliminates the need for intermediaries and provides transparent, tamper-proof record-keeping. However, concerns about energy consumption, scalability, and regulatory uncertainty continue to challenge widespread adoption.",
+    "expected_output": "Blockchain technology has expanded beyond cryptocurrency to supply chain, healthcare, voting, and identity verification, offering transparency and security, though energy consumption and scalability concerns remain."
+  },
+  {
+    "input": "The human brain contains approximately 86 billion neurons, each connected to thousands of others through synapses. This intricate network enables everything from basic motor functions to complex thought and creativity. Neuroscientists estimate that we have mapped less than 1 percent of all neural connections, and understanding the full complexity of the brain remains one of science's greatest challenges.",
+    "expected_output": "The human brain has 86 billion neurons with trillions of synaptic connections enabling all function from motor skills to creativity. Less than 1% of neural connections have been mapped."
+  },
+  {
+    "input": "Coral reefs cover less than 1 percent of the ocean floor yet support approximately 25 percent of all marine species. They provide critical ecosystem services including coastal protection, fisheries support, and tourism revenue estimated at billions of dollars annually. Climate change, ocean acidification, and pollution threaten these fragile ecosystems, with scientists warning that up to 90 percent of reefs could disappear by 2050 without significant intervention.",
+    "expected_output": "Coral reefs cover under 1% of the ocean floor but support 25% of marine species and provide billions in ecosystem services. Climate change and pollution could destroy 90% of reefs by 2050."
+  },
+  {
+    "input": "Meditation has been practiced for thousands of years across various cultures and religions. Modern research has shown that regular meditation can reduce stress, anxiety, and depression while improving focus, emotional regulation, and overall well-being. Brain imaging studies reveal that meditation physically changes brain structure, increasing gray matter in areas associated with self-awareness and compassion.",
+    "expected_output": "Meditation, practiced for millennia, has been shown by modern research to reduce stress and improve focus, with brain imaging revealing it physically increases gray matter in areas linked to self-awareness."
+  },
+  {
+    "input": "The International Space Station orbits Earth at approximately 28,000 kilometers per hour, completing one orbit every 90 minutes. Since its first components were launched in 1998, it has been continuously occupied since November 2000, making it the longest continuous human presence in space. The station serves as a microgravity laboratory for scientific research that cannot be conducted on Earth.",
+    "expected_output": "The ISS orbits Earth every 90 minutes at 28,000 km/h and has been continuously occupied since 2000, serving as a microgravity laboratory for unique scientific research."
+  },
+  {
+    "input": "Solar energy capacity has grown exponentially over the past decade, with costs dropping by over 89 percent. Solar panels now generate electricity more cheaply than fossil fuels in many regions. Countries like China, India, and the United States lead in installations, and the technology continues to improve in efficiency.",
+    "expected_output": "Solar energy costs have dropped 89% in a decade, making it cheaper than fossil fuels in many regions, with China, India, and the US leading installations."
+  },
+  {
+    "input": "Antibiotics revolutionized medicine in the 20th century, saving millions of lives from bacterial infections. However, the overuse and misuse of antibiotics in healthcare and agriculture have led to the emergence of antibiotic-resistant bacteria, or superbugs. The WHO has identified antimicrobial resistance as one of the top ten global public health threats.",
+    "expected_output": "Antibiotics saved millions of lives but overuse has created resistant superbugs. The WHO considers antimicrobial resistance one of the top ten global health threats."
+  },
+  {
+    "input": "The Mars rovers have transformed our understanding of the Red Planet. Curiosity and Perseverance have discovered evidence of ancient water, organic molecules, and geological features suggesting Mars may have once been habitable.",
+    "expected_output": "Mars rovers Curiosity and Perseverance found evidence of ancient water and organic molecules, suggesting Mars may have been habitable."
+  },
+  {
+    "input": "Biodiversity loss is accelerating at an unprecedented rate, with scientists estimating that species are going extinct 100 to 1000 times faster than the natural background rate. The primary drivers include habitat destruction, climate change, pollution, and invasive species.",
+    "expected_output": "Species are going extinct up to 1000 times faster than natural rates due to habitat destruction, climate change, and pollution."
+  },
+  {
+    "input": "The printing press, invented by Johannes Gutenberg around 1440, is considered one of the most important inventions in human history. By enabling mass production of books, it democratized knowledge and accelerated literacy rates.",
+    "expected_output": "Gutenberg's printing press around 1440 democratized knowledge through mass book production, accelerating literacy rates."
+  },
+  {
+    "input": "Volcanic eruptions, while destructive, play an essential role in shaping Earth's landscape and atmosphere. They create new land, enrich soil with minerals, and release gases that contribute to the atmosphere.",
+    "expected_output": "Volcanic eruptions shape Earth's landscape and atmosphere by creating land, enriching soil, and releasing atmospheric gases."
+  },
+  {
+    "input": "The human gut microbiome contains trillions of microorganisms that play crucial roles in digestion, immune function, and even mental health. Recent research has revealed connections between gut bacteria diversity and conditions from obesity to depression.",
+    "expected_output": "The gut microbiome's trillions of organisms affect digestion, immunity, and mental health, with diverse bacteria linked to conditions from obesity to depression."
+  },
+  {
+    "input": "Deforestation in tropical regions accounts for approximately 10 percent of global greenhouse gas emissions. Forests act as carbon sinks, absorbing billions of tons of CO2 annually.",
+    "expected_output": "Tropical deforestation causes about 10% of global greenhouse emissions, as forests normally act as carbon sinks absorbing billions of tons of CO2."
+  },
+  {
+    "input": "The first photograph was taken in 1826 by Joseph Nicephore Niepce using heliography. Since then, photography has evolved from daguerreotypes to digital cameras and smartphones that capture millions of images daily.",
+    "expected_output": "Photography evolved from the first 1826 heliograph to modern smartphones, fundamentally changing how humans document the world."
+  },
+  {
+    "input": "Water scarcity affects more than 2 billion people worldwide, and this number is expected to grow as populations increase and climate change alters precipitation patterns. Agricultural irrigation accounts for approximately 70 percent of global freshwater use.",
+    "expected_output": "Water scarcity affects over 2 billion people globally, worsened by climate change, with agriculture using 70% of freshwater."
+  },
+  {
+    "input": "Cybersecurity threats have grown exponentially as more of our lives move online. Ransomware attacks cost businesses billions annually, while data breaches expose millions of personal records.",
+    "expected_output": "Cybersecurity threats are growing as life moves online, with ransomware and data breaches costing billions and exposing millions of records."
+  },
+  {
+    "input": "Wind energy is one of the fastest-growing sources of renewable electricity globally. Modern wind turbines can generate enough electricity to power thousands of homes, and offshore wind farms take advantage of stronger ocean winds.",
+    "expected_output": "Wind energy is rapidly growing globally, with modern turbines powering thousands of homes and offshore farms leveraging stronger ocean winds."
+  },
+  {
+    "input": "The ozone layer protects life on Earth by absorbing most harmful ultraviolet radiation. The 1987 Montreal Protocol banned ozone-depleting substances and is considered one of the most successful environmental agreements in history.",
+    "expected_output": "The ozone layer protects from UV radiation. The 1987 Montreal Protocol banned ozone-depleting substances and is a landmark environmental success."
+  },
+  {
+    "input": "Machine learning algorithms can now compose music, write poetry, generate artwork, and produce realistic video content. While these capabilities have exciting creative applications, they raise concerns about copyright, authenticity, and displacement of human artists.",
+    "expected_output": "AI can compose music, create art, and generate video, raising concerns about copyright, authenticity, and artist displacement."
+  },
+  {
+    "input": "The Dead Sea, between Jordan and Israel, is one of the saltiest bodies of water on Earth. Its high salt concentration allows swimmers to float effortlessly. It is shrinking by about one meter per year due to water diversion and mineral extraction.",
+    "expected_output": "The Dead Sea is one of Earth's saltiest water bodies, famous for floating, but is shrinking by one meter per year."
+  },
+  {
+    "input": "Coffee is the second most traded commodity after oil. Over 2.25 billion cups are consumed daily across the globe. Climate change threatens coffee production, with studies suggesting half of current growing areas could become unsuitable by 2050.",
+    "expected_output": "Coffee is the world's second most traded commodity with 2.25 billion daily cups, but climate change could halve growing areas by 2050."
+  },
+  {
+    "input": "The Hubble Space Telescope has orbited Earth since 1990, helping scientists determine the age of the universe, discover dark energy, and observe galaxy formation. The James Webb Space Telescope now extends observations even further.",
+    "expected_output": "Hubble has orbited since 1990, helping determine the universe's age and discover dark energy. The James Webb Telescope extends observations further."
+  },
+  {
+    "input": "Urban farming is gaining popularity as cities seek food security. Vertical farms, rooftop gardens, and hydroponic systems allow fresh produce to be grown year-round. These innovations can reduce water usage by up to 95 percent compared to traditional farming.",
+    "expected_output": "Urban farming through vertical farms and hydroponics grows in popularity, reducing water usage by up to 95% while improving city food security."
+  },
+  {
+    "input": "The Rosetta Stone, discovered in 1799, was the key to deciphering ancient Egyptian hieroglyphics. It bears the same text in three scripts: hieroglyphics, Demotic, and ancient Greek. Scholar Champollion decoded it in 1822.",
+    "expected_output": "The Rosetta Stone enabled deciphering Egyptian hieroglyphics through its trilingual inscription, decoded by Champollion in 1822."
+  },
+  {
+    "input": "Plastic pollution has reached crisis levels, with over 8 million tons of plastic entering the oceans annually. Marine animals ingest or become entangled in plastic debris, causing injury and death to millions of creatures each year.",
+    "expected_output": "Over 8 million tons of plastic enter oceans annually, harming millions of marine animals through ingestion and entanglement."
+  },
+  {
+    "input": "The human genome was fully sequenced in 2003, taking 13 years and costing nearly 3 billion dollars. Today, sequencing can be completed in hours for under 1000 dollars, enabling personalized medicine.",
+    "expected_output": "The human genome was sequenced in 2003 after 13 years and $3 billion. Now achievable in hours for under $1000, it enables personalized medicine."
+  },
+  {
+    "input": "Volcanic islands like Hawaii form over hotspots where magma breaks through the ocean floor. Over millions of years, eruptions build underwater mountains that eventually rise above the sea. These islands have unique ecosystems with endemic species.",
+    "expected_output": "Volcanic islands like Hawaii form from hotspots over millions of years, creating unique ecosystems with endemic species found nowhere else."
+  },
+  {
+    "input": "The concept of zero was developed independently by Mayan and Indian civilizations. Indian mathematician Brahmagupta first formally defined zero in 628 AD. This concept revolutionized mathematics and made modern computing possible.",
+    "expected_output": "Zero was independently developed by Mayan and Indian civilizations, formally defined by Brahmagupta in 628 AD, revolutionizing mathematics."
+  },
+  {
+    "input": "Global food waste is staggering, with approximately one-third of all food produced being lost or wasted, amounting to 1.3 billion tons annually. This contributes to greenhouse gas emissions and an estimated trillion-dollar economic loss per year.",
+    "expected_output": "One-third of global food production\u20141.3 billion tons\u2014is wasted annually, causing greenhouse emissions and a trillion-dollar economic loss."
+  },
+  {
+    "input": "Exercise has been shown to be as effective as medication for treating mild to moderate depression. Regular physical activity releases endorphins, improves sleep, and reduces stress hormones. Just 30 minutes five times per week helps significantly.",
+    "expected_output": "Exercise can match medication for mild-moderate depression, with 30 minutes five times weekly improving mental health through endorphin release."
+  },
+  {
+    "input": "The Northern Lights occur when charged solar particles interact with atmospheric gases. Most visible near the Arctic in winter, their intensity follows 11-year solar cycles, with vivid displays during periods of high solar activity.",
+    "expected_output": "Northern Lights occur when solar particles interact with atmospheric gases near the Arctic, with intensity following 11-year solar cycles."
+  },
+  {
+    "input": "CRISPR gene editing allows scientists to precisely modify DNA in living organisms. Since 2012, it has been used for disease-resistant crops, genetic disorder treatments, and research. Ethical debates about human germline editing continue.",
+    "expected_output": "CRISPR enables precise DNA modification for crops, medicine, and research since 2012, while ethical debates about human germline editing continue."
+  },
+  {
+    "input": "The Library of Alexandria, established in the 3rd century BC, was one of the largest and most significant libraries of the ancient world. It attracted scholars from across the Mediterranean and may have housed hundreds of thousands of scrolls.",
+    "expected_output": "The Library of Alexandria was one of antiquity's greatest libraries with hundreds of thousands of scrolls, attracting scholars across the Mediterranean."
+  },
+  {
+    "input": "Honeybees pollinate approximately 75 percent of fruits, vegetables, and nuts consumed worldwide. Colony collapse disorder and pesticide exposure have caused significant population declines. Scientists and beekeepers work to protect these vital insects.",
+    "expected_output": "Honeybees pollinate 75% of consumed produce but face population declines from colony collapse and pesticides, prompting protection efforts."
+  },
+  {
+    "input": "The Pacific Ocean covers approximately one-third of Earth's surface and contains the Mariana Trench at 11,000 meters depth. Much of the deep Pacific remains unexplored, with potentially millions of undiscovered species.",
+    "expected_output": "The Pacific Ocean covers one-third of Earth with the 11,000m Mariana Trench, largely unexplored with millions of potential undiscovered species."
+  },
+  {
+    "input": "Fermentation, one of the oldest preservation techniques, produces bread, cheese, yogurt, beer, and wine. Modern research on its probiotic benefits for gut health has driven renewed interest in traditional fermentation methods.",
+    "expected_output": "Fermentation is an ancient technique producing bread, cheese, and beer, with modern research on probiotic gut benefits reviving interest."
+  },
+  {
+    "input": "Geostationary satellites orbit at the same speed as Earth's rotation, remaining fixed above one point on the equator. This makes them ideal for communications and weather monitoring. About 500 active ones orbit at 35,786 km altitude.",
+    "expected_output": "About 500 geostationary satellites remain fixed above Earth at 35,786 km altitude, ideal for communications and weather monitoring."
+  },
+  {
+    "input": "Dogs were domesticated from wolves 15,000 to 40,000 years ago, making them the first domesticated animal. Today there are over 350 recognized breeds, each developed for specific tasks from herding and hunting to companionship.",
+    "expected_output": "Dogs were the first domesticated animal from wolves up to 40,000 years ago. Today's 350+ breeds serve tasks from herding to companionship."
+  },
+  {
+    "input": "Renewable energy sources now account for approximately 30 percent of global electricity generation, led by solar and wind. The IEA projects renewables will become dominant by 2025, driven by declining costs and supportive policies.",
+    "expected_output": "Renewables generate 30% of global electricity, with the IEA projecting dominance by 2025 due to declining costs and policy support."
+  },
+  {
+    "input": "The Great Wall of China stretches approximately 21,000 km, built over centuries for border defense. Contrary to popular belief, it is not visible from space with the naked eye. It served as border control including customs.",
+    "expected_output": "The Great Wall stretches 21,000 km for border defense and is not visible from space despite popular belief."
+  },
+  {
+    "input": "Virtual reality technology has expanded beyond gaming into medical training, therapy for PTSD and phobias, architectural design, and remote collaboration. Improving quality at decreasing prices suggests widespread adoption ahead.",
+    "expected_output": "VR technology has expanded beyond gaming into medical training, therapy, and collaboration, with improving quality and decreasing prices."
+  },
+  {
+    "input": "Mangrove forests protect coastlines from erosion and storms, serve as fish nurseries, and store four times more carbon than terrestrial forests. Despite this, they are being destroyed at 1-2 percent per year.",
+    "expected_output": "Mangrove forests protect coastlines, serve as fish nurseries, and excel at carbon storage, yet are destroyed at 1-2% yearly."
+  },
+  {
+    "input": "The transistor was invented in 1947 at Bell Labs, replacing bulky vacuum tubes and enabling electronic miniaturization. Modern chips contain billions of nanometer-sized transistors, following Moore's Law of doubling every two years.",
+    "expected_output": "The 1947 transistor invention at Bell Labs enabled electronic miniaturization. Modern chips contain billions of nanometer transistors following Moore's Law."
+  },
+  {
+    "input": "Mercury is the smallest planet and closest to the Sun, yet not the hottest due to no atmosphere. Its surface temperatures swing from 430C during day to -180C at night. Venus is hotter due to its greenhouse atmosphere.",
+    "expected_output": "Mercury is the smallest planet and closest to the Sun but not the hottest, with temperatures swinging from 430C to -180C without an atmosphere."
+  },
+  {
+    "input": "Sign language is a complete natural language with its own grammar, distinct from spoken languages. There are over 300 sign languages worldwide that are not mutually intelligible, reflecting historical rather than geographical connections.",
+    "expected_output": "Sign language is a complete natural language with over 300 worldwide varieties, not mutually intelligible, reflecting historical connections."
+  },
+  {
+    "input": "The Sahara Desert covers 9.2 million square kilometers as the largest hot desert. Between 5,000 and 11,000 years ago, it was green with lakes, rivers, and wildlife. Climate cycles driven by Earth's orbital parameters cause these transformations.",
+    "expected_output": "The Sahara is the largest hot desert at 9.2 million sq km but was green with lakes 5,000-11,000 years ago due to orbital climate cycles."
+  },
+  {
+    "input": "Telescopes have evolved from Galileo's 1609 observations to modern instruments using radio waves, X-rays, and infrared. Space-based telescopes like Hubble and James Webb avoid atmospheric distortion for unprecedented clarity.",
+    "expected_output": "Telescopes evolved from Galileo's era to multi-wavelength instruments. Space-based ones like Hubble and Webb provide unprecedented clarity."
+  },
+  {
+    "input": "Ocean currents distribute heat from the tropics to the poles. The Gulf Stream keeps Western Europe warmer than expected. Climate change could disrupt these currents, potentially causing dramatic regional shifts.",
+    "expected_output": "Ocean currents distribute tropical heat globally, with the Gulf Stream warming Europe. Climate change could disrupt them, causing dramatic regional shifts."
+  },
+  {
+    "input": "Democracy originated in ancient Athens around 500 BC with direct citizen voting, though excluding women, slaves, and non-citizens. Modern representative democracies are more inclusive but continue to evolve regarding voter access and representation.",
+    "expected_output": "Democracy originated in Athens around 500 BC with direct voting, excluding many groups. Modern democracies continue evolving on access and representation."
+  },
+  {
+    "input": "Mushrooms represent one of the most diverse organism groups with an estimated 5 million species, fewer than 10 percent identified. They serve culinary, medicinal, and ecological roles in decomposition and tree symbiosis.",
+    "expected_output": "Of an estimated 5 million mushroom species, under 10% are identified. They serve culinary, medicinal, and ecological roles."
+  },
+  {
+    "input": "Coral reef bleaching events have increased in frequency due to rising ocean temperatures. When water temperatures are too high, corals expel the algae living in their tissues and turn white. Without these algae, corals cannot survive long-term.",
+    "expected_output": "Rising ocean temperatures cause coral bleaching by forcing corals to expel their symbiotic algae, threatening their long-term survival."
+  },
+  {
+    "input": "The domestication of wheat around 10,000 years ago in the Fertile Crescent was a pivotal event in human history. It enabled settled agriculture, which led to permanent settlements, population growth, and eventually the rise of civilizations.",
+    "expected_output": "Wheat domestication 10,000 years ago in the Fertile Crescent enabled settled agriculture, permanent settlements, and the rise of civilizations."
+  },
+  {
+    "input": "Deep sea hydrothermal vents support entire ecosystems based on chemosynthesis rather than photosynthesis. Bacteria near these vents convert chemicals from the superheated water into energy, forming the base of unique food chains in total darkness.",
+    "expected_output": "Deep sea hydrothermal vents support unique ecosystems based on chemosynthesis, where bacteria convert chemicals into energy in total darkness."
+  },
+  {
+    "input": "The invention of refrigeration transformed food storage, transportation, and global trade. Before mechanical refrigeration, food preservation relied on salting, smoking, and ice harvesting. Modern cold chain logistics now enable fresh food delivery worldwide.",
+    "expected_output": "Refrigeration transformed food from salt-and-smoke preservation to modern cold chain logistics enabling fresh global food delivery."
+  },
+  {
+    "input": "Neutrinos are subatomic particles that interact so weakly with matter that billions pass through your body every second without effect. Detecting them requires massive underground detectors. They provide insights into stellar processes and the early universe.",
+    "expected_output": "Neutrinos are weakly interacting particles that pass through matter undetected, requiring massive detectors but providing insights into stars and the early universe."
+  },
+  {
+    "input": "The Silk Road maritime routes complemented the overland routes, connecting China to Africa and Europe via the Indian Ocean. Chinese treasure fleets under Admiral Zheng He explored these routes with ships far larger than European vessels of the time.",
+    "expected_output": "Maritime Silk Road routes connected China to Africa and Europe via the Indian Ocean, with Zheng He's massive treasure fleets."
+  },
+  {
+    "input": "Artificial photosynthesis aims to mimic plants by using sunlight to convert water and CO2 into fuel. While still experimental, success could provide unlimited clean energy and help remove carbon dioxide from the atmosphere.",
+    "expected_output": "Artificial photosynthesis seeks to use sunlight to convert water and CO2 into fuel, potentially providing unlimited clean energy and carbon removal."
+  },
+  {
+    "input": "The placebo effect demonstrates the power of belief in healing. Patients given inactive treatments often show real improvements, with brain imaging showing actual changes in neural activity. This effect is strongest for pain, depression, and anxiety.",
+    "expected_output": "The placebo effect shows belief can cause real healing, with brain imaging confirming neural changes, strongest for pain, depression, and anxiety."
+  },
+  {
+    "input": "Permafrost covers nearly a quarter of the Northern Hemisphere's land surface and stores approximately 1.5 trillion metric tons of carbon. As global temperatures rise, thawing permafrost releases methane and CO2, creating a dangerous positive feedback loop.",
+    "expected_output": "Permafrost stores 1.5 trillion tons of carbon across a quarter of Northern Hemisphere land. Thawing releases greenhouse gases in a dangerous feedback loop."
+  },
+  {
+    "input": "The Mpemba effect is the counterintuitive observation that hot water can sometimes freeze faster than cold water under certain conditions. First documented by a Tanzanian student in 1963, the phenomenon still lacks a complete scientific explanation.",
+    "expected_output": "The Mpemba effect, where hot water can freeze faster than cold, was documented by a Tanzanian student in 1963 and still lacks full scientific explanation."
+  },
+  {
+    "input": "Tardigrades, also known as water bears, are microscopic animals that can survive extreme conditions including vacuum of space, intense radiation, and temperatures near absolute zero. They achieve this through a process called cryptobiosis.",
+    "expected_output": "Tardigrades are microscopic animals surviving extreme conditions including space vacuum and near-absolute-zero temperatures through cryptobiosis."
+  },
+  {
+    "input": "The discovery of penicillin by Alexander Fleming in 1928 was largely accidental, resulting from a contaminated petri dish. This chance observation led to the development of antibiotics, saving an estimated 200 million lives since then.",
+    "expected_output": "Fleming accidentally discovered penicillin in 1928 from a contaminated petri dish, leading to antibiotics that have saved an estimated 200 million lives."
+  },
+  {
+    "input": "Graphene is a single layer of carbon atoms arranged in a hexagonal lattice. It is 200 times stronger than steel, conducts electricity better than copper, and is nearly transparent. Its potential applications span electronics, medicine, and energy storage.",
+    "expected_output": "Graphene is a single-atom carbon layer that is 200 times stronger than steel and conducts electricity better than copper, with wide potential applications."
+  },
+  {
+    "input": "The Galapagos Islands inspired Charles Darwin's theory of evolution by natural selection. The unique species found there, including giant tortoises and marine iguanas, demonstrated how organisms adapt to their specific environments over generations.",
+    "expected_output": "The Galapagos Islands inspired Darwin's evolution theory, with unique species like giant tortoises demonstrating environmental adaptation over generations."
+  },
+  {
+    "input": "The world's oldest known living tree is a bristlecone pine named Methuselah, located in California's White Mountains. It is over 4,850 years old. Its exact location is kept secret to protect it from vandalism.",
+    "expected_output": "Methuselah, a 4,850-year-old bristlecone pine in California, is the oldest known living tree, with its exact location kept secret for protection."
+  },
+  {
+    "input": "Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape. They form when massive stars collapse at the end of their life cycle. The first image of a black hole was captured in 2019.",
+    "expected_output": "Black holes are regions where nothing escapes gravity, formed from collapsed massive stars. The first image of one was captured in 2019."
+  }
+]

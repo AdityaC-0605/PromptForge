@@ -1,0 +1,18 @@
+task_id: json_extraction
+task_type: extraction
+description: >
+  Extract structured information from the given free-text product description.
+  Output a JSON object with: {"name": "...", "category": "...", "price": ..., "features": [...]}
+  - name: the product name
+  - category: one of "electronics", "clothing", "food", "home", "sports", "other"
+  - price: numeric price (no currency symbol)
+  - features: list of key features as short strings
+input_schema:
+  type: text
+  description: A free-text product description
+output_schema:
+  type: json
+  format: '{"name": "...", "category": "...", "price": 0.0, "features": [...]}'
+evaluation_method: f1_score
+dataset_file: json_extraction_dataset.json
+seed_strategy: format_constrained
