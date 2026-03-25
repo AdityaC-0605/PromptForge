@@ -5,6 +5,7 @@ Iteration Controller — orchestrates the full prompt optimization loop.
 import asyncio
 import logging
 import time
+import uuid
 from typing import Any, Callable
 
 from backend.llm.llm_router import LLMRouter
@@ -84,7 +85,10 @@ class IterationController:
         # Get scoring function
         score_fn: Callable[[str, str], bool]
         if task.evaluation_method == "llm_judge":
-            score_fn = self.scorer.contains_match  # fallback for llm_judge
+            logger.warning(
+                "llm_judge evaluation is not yet implemented — falling back to contains_match"
+            )
+            score_fn = self.scorer.contains_match
         else:
             score_fn = self.scorer.get_scoring_function(task.evaluation_method)
 
@@ -95,6 +99,8 @@ class IterationController:
         best_version = 0
         consecutive_drops = 0
         prev_score = 0.0
+        prev_prompt = current_prompt
+        optimizer_reasoning = ""
 
         for iteration in range(self.max_iterations):
             logger.info(f"=== Iteration {iteration} ===")
@@ -131,10 +137,7 @@ class IterationController:
             # Compute diff (empty for v0)
             prompt_diff = ""
             if iteration > 0:
-                prompt_diff = self.optimizer.generate_diff(
-                    best_prompt if best_score > report.accuracy else current_prompt,
-                    current_prompt,
-                )
+                prompt_diff = self.optimizer.generate_diff(prev_prompt, current_prompt)
 
             # Log to audit
             await self.audit_log.log_version(
@@ -145,11 +148,30 @@ class IterationController:
                 passed=report.passed,
                 failed=report.failed,
                 failure_summary=report.failure_summary,
-                optimizer_reasoning="",
+                optimizer_reasoning=optimizer_reasoning,
                 prompt_diff=prompt_diff,
             )
 
-            # Emit end event
+            # Emit test_case_result events for each evaluated case
+            if event_callback:
+                for result in results:
+                    await self._emit(
+                        event_callback,
+                        IterationEvent(
+                            "test_case_result",
+                            {
+                                "id": str(uuid.uuid4()),
+                                "input": result.input,
+                                "expected": result.expected_output,
+                                "actual": result.actual_output,
+                                "passed": result.passed,
+                                "timestamp": time.time(),
+                                "latency": None,
+                            },
+                        ),
+                    )
+
+            # Emit end event — use "version" and "score" to match frontend expectations
             if event_callback:
                 await self._emit(
                     event_callback,
@@ -157,8 +179,8 @@ class IterationController:
                         "iteration_end",
                         {
                             "run_id": run_id,
-                            "iteration": iteration,
-                            "accuracy": report.accuracy,
+                            "version": iteration,
+                            "score": report.accuracy,
                             "passed": report.passed,
                             "failed": report.failed,
                             "failure_clusters": [
@@ -204,7 +226,8 @@ class IterationController:
                     for r in results
                     if r.passed
                 ]
-                new_prompt, reasoning = await self.optimizer.optimize(
+                prev_prompt = current_prompt
+                new_prompt, optimizer_reasoning = await self.optimizer.optimize(
                     current_prompt=current_prompt,
                     score_report=report,
                     passing_examples=passing,
@@ -218,11 +241,13 @@ class IterationController:
             await self.audit_log.finish_run(run_id, "max_iterations")
 
         elapsed = time.time() - start_time
+        total_iterations_run = min(iteration + 1, self.max_iterations) if self.max_iterations > 0 else 0
 
         summary = {
             "run_id": run_id,
             "task_id": task.task_id,
-            "total_iterations": min(iteration + 1, self.max_iterations),
+            "status": "completed",
+            "total_iterations": total_iterations_run,
             "best_score": best_score,
             "best_version": best_version,
             "best_prompt": best_prompt,
