@@ -10,7 +10,7 @@ from typing import Any, Callable
 
 from backend.llm.llm_router import LLMRouter
 from backend.modules.audit_log import AuditLog
-from backend.modules.dataset_manager import TestCase
+from backend.modules.dataset_manager import DataTestCase
 from backend.modules.evaluator import Evaluator
 from backend.modules.optimizer import Optimizer
 from backend.modules.prompt_generator import PromptGenerator
@@ -62,7 +62,7 @@ class IterationController:
     async def run(
         self,
         task: TaskConfig,
-        test_cases: list[TestCase],
+        test_cases: list[DataTestCase],
         seed_strategy: str | None = None,
         event_callback: Callable[[IterationEvent], Any] | None = None,
         run_id: str | None = None,
@@ -101,6 +101,7 @@ class IterationController:
         prev_score = 0.0
         prev_prompt = current_prompt
         optimizer_reasoning = ""
+        iteration = -1
 
         for iteration in range(self.max_iterations):
             logger.info(f"=== Iteration {iteration} ===")
