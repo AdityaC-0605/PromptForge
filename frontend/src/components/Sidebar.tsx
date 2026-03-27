@@ -53,30 +53,43 @@ export default function Sidebar() {
                 href={href}
                 aria-current={active ? 'page' : undefined}
                 onClick={() => setOpen(false)}
+                className="sidebar-link"
                 style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '0.75rem',
                   padding: '0.625rem 1.25rem',
                   paddingLeft: active ? '1.125rem' : '1.25rem',
-                  margin: '0.125rem 0.5rem',
+                  margin: '0.25rem 0.625rem',
                   borderRadius: 'var(--radius-sm)',
                   textDecoration: 'none',
-                  fontWeight: 500,
+                  fontWeight: 600,
                   fontSize: '0.875rem',
-                  color: active ? 'var(--text)' : 'var(--text-secondary)',
-                  background: active ? 'var(--bg-surface)' : 'transparent',
-                  borderLeft: active ? '2px solid var(--text)' : '2px solid transparent',
-                  transition: 'color 0.15s, background 0.15s',
+                  color: active ? '#fff' : 'var(--text-secondary)',
+                  background: active ? 'var(--bg-card-hover)' : 'transparent',
+                  borderLeft: active ? '3px solid var(--accent-light)' : '3px solid transparent',
+                  transition: 'var(--transition-smooth)',
+                  boxShadow: active ? 'inset 20px 0 30px -20px rgba(167, 139, 250, 0.2)' : 'none',
                 }}
               >
-                <Icon size={16} aria-hidden="true" />
-                {label}
+                <Icon size={18} aria-hidden="true" style={{ color: active ? 'var(--accent-light)' : 'inherit', transition: 'var(--transition-smooth)' }} />
+                <span style={{ 
+                  textShadow: active ? '0 0 10px rgba(255, 255, 255, 0.3)' : 'none'
+                }}>
+                  {label}
+                </span>
               </Link>
             </li>
           );
         })}
       </ul>
+      <style>{`
+        .sidebar-link:hover {
+          background: var(--bg-card) !important;
+          color: #fff !important;
+          transform: translateX(2px);
+        }
+      `}</style>
 
       {/* Model indicator pill */}
       <div style={{ marginTop: 'auto', padding: '1rem 1.25rem' }}>

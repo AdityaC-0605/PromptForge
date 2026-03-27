@@ -23,7 +23,7 @@ describe('Sidebar', () => {
     render(<Sidebar />);
     const activeLink = screen.getAllByText('History')[0].closest('a');
     expect(activeLink?.getAttribute('aria-current')).toBe('page');
-    expect(activeLink?.style.color).toBe('var(--text)');
+    expect(activeLink?.style.color).toBe('rgb(255, 255, 255)');
 
     const inactiveLink = screen.getAllByText('Dashboard')[0].closest('a');
     expect(inactiveLink?.getAttribute('aria-current')).toBeNull();
