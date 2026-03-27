@@ -5,33 +5,52 @@ export default function Hero() {
     <section
       style={{
         textAlign: 'center',
-        padding: '6rem 2rem 4rem',
-        maxWidth: 720,
+        padding: '8rem 2rem 6rem',
+        maxWidth: 820,
         margin: '0 auto',
+        position: 'relative',
+        zIndex: 1,
       }}
     >
+      {/* Background radial glow */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '20%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: '600px',
+          height: '600px',
+          background: 'radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 60%)',
+          zIndex: -1,
+          pointerEvents: 'none',
+        }}
+      />
+
       {/* Badge */}
       <div
+        className="glass-panel"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
-          gap: '0.5rem',
-          padding: '0.375rem 0.875rem',
-          border: '1px solid var(--border)',
+          gap: '0.6rem',
+          padding: '0.4rem 1rem',
           borderRadius: 999,
           marginBottom: '2rem',
-          fontSize: '0.75rem',
+          fontSize: '0.8rem',
           fontWeight: 500,
-          color: 'var(--text-secondary)',
+          color: 'var(--accent-light)',
+          animation: 'fadeInUp 0.8s ease-out forwards',
         }}
       >
         <span
           style={{
-            width: 7,
-            height: 7,
+            width: 8,
+            height: 8,
             borderRadius: '50%',
-            background: '#16a34a',
+            background: 'var(--green)',
             display: 'inline-block',
+            boxShadow: '0 0 10px var(--green)',
             animation: 'pulse-dot 2s ease-in-out infinite',
           }}
         />
@@ -40,43 +59,59 @@ export default function Hero() {
 
       <h1
         style={{
-          fontSize: 52,
-          fontWeight: 500,
+          fontSize: 'clamp(40px, 6vw, 64px)',
+          fontWeight: 700,
           lineHeight: 1.1,
-          color: 'var(--text)',
           marginBottom: '1.5rem',
           letterSpacing: '-1.5px',
+          background: 'linear-gradient(135deg, #ffffff 0%, #a29bfe 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          animation: 'fadeInUp 0.8s ease-out 0.1s forwards',
+          opacity: 0,
         }}
+        className="glow-text"
       >
         Prompts that engineer themselves
       </h1>
 
       <p
         style={{
-          fontSize: 17,
+          fontSize: 'clamp(16px, 2vw, 20px)',
           fontWeight: 400,
           color: 'var(--text-secondary)',
-          lineHeight: 1.7,
-          marginBottom: '2.5rem',
-          maxWidth: 520,
-          margin: '0 auto 2.5rem',
+          lineHeight: 1.6,
+          marginBottom: '3rem',
+          maxWidth: 600,
+          margin: '0 auto 3rem',
+          animation: 'fadeInUp 0.8s ease-out 0.2s forwards',
+          opacity: 0,
         }}
       >
         PromptForge runs your prompt against a test suite, clusters failures, and rewrites the prompt automatically — iterating until it hits your accuracy target.
       </p>
 
-      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div 
+        style={{ 
+          display: 'flex', 
+          gap: '1.25rem', 
+          justifyContent: 'center', 
+          flexWrap: 'wrap',
+          animation: 'fadeInUp 0.8s ease-out 0.3s forwards',
+          opacity: 0,
+        }}
+      >
         <Link
           href="/run"
           className="btn-primary"
-          style={{ fontSize: '1rem', padding: '0.75rem 1.75rem' }}
+          style={{ fontSize: '1.1rem', padding: '0.875rem 2.25rem', borderRadius: 'var(--radius)' }}
         >
-          Start optimizing →
+          Start optimizing
         </Link>
         <Link
           href="#demo"
-          className="btn-ghost"
-          style={{ fontSize: '1rem', padding: '0.75rem 1.75rem' }}
+          className="btn-ghost glass-panel"
+          style={{ fontSize: '1.1rem', padding: '0.875rem 2.25rem', borderRadius: 'var(--radius)' }}
         >
           See a demo run
         </Link>
@@ -84,8 +119,12 @@ export default function Hero() {
 
       <style>{`
         @keyframes pulse-dot {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.6; transform: scale(1.3); }
+          0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 10px var(--green); }
+          50% { opacity: 0.5; transform: scale(1.3); box-shadow: 0 0 20px var(--green); }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </section>
