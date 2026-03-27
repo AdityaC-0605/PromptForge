@@ -8,7 +8,7 @@ import logging
 from pydantic import BaseModel
 from backend.config import EVAL_CONCURRENCY
 from backend.llm.llm_router import LLMRouter
-from backend.modules.dataset_manager import TestCase
+from backend.modules.dataset_manager import DataTestCase
 from typing import Callable
 
 logger = logging.getLogger(__name__)
@@ -38,7 +38,7 @@ class Evaluator:
     async def evaluate(
         self,
         prompt_template: str,
-        test_cases: list[TestCase],
+        test_cases: list[DataTestCase],
         score_fn: Callable[[str, str], bool],
         dry_run: bool = False,
     ) -> list[EvalResult]:
@@ -66,7 +66,7 @@ class Evaluator:
         self,
         semaphore: asyncio.Semaphore,
         prompt_template: str,
-        case: TestCase,
+        case: DataTestCase,
         score_fn: Callable[[str, str], bool],
     ) -> EvalResult:
         """Evaluate a single test case with concurrency control."""
@@ -97,7 +97,7 @@ class Evaluator:
                 )
 
     def _dry_run(
-        self, prompt_template: str, test_cases: list[TestCase]
+        self, prompt_template: str, test_cases: list[DataTestCase]
     ) -> list[EvalResult]:
         """Validate that all test cases can be evaluated (no LLM calls)."""
         results: list[EvalResult] = []

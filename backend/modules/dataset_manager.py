@@ -11,7 +11,7 @@ from pydantic import BaseModel
 from backend.config import DATASETS_DIR
 
 
-class TestCase(BaseModel):
+class DataTestCase(BaseModel):
     """A single test case with input, expected output, and metadata."""
 
     input: str
@@ -23,8 +23,8 @@ class TestCase(BaseModel):
 class DatasetSplit(BaseModel):
     """Train/test split of a dataset."""
 
-    train: list[TestCase]
-    test: list[TestCase]
+    train: list[DataTestCase]
+    test: list[DataTestCase]
     total: int
     must_pass_count: int
 
@@ -77,7 +77,7 @@ class DatasetManager:
             must_pass_count=must_pass_count,
         )
 
-    def load_all(self, filename: str) -> list[TestCase]:
+    def load_all(self, filename: str) -> list[DataTestCase]:
         """Load all test cases without splitting."""
         path = self.datasets_dir / filename
         if not path.exists():
@@ -92,17 +92,17 @@ class DatasetManager:
 
         return self._validate(cases)
 
-    def _load_json(self, path: Path) -> list[TestCase]:
+    def _load_json(self, path: Path) -> list[DataTestCase]:
         """Load test cases from a JSON file."""
         with open(path, "r") as f:
             raw = json.load(f)
         if not isinstance(raw, list):
             raise ValueError(f"JSON dataset must be a list, got {type(raw).__name__}")
-        return [TestCase(**item) for item in raw]
+        return [DataTestCase(**item) for item in raw]
 
-    def _load_csv(self, path: Path) -> list[TestCase]:
+    def _load_csv(self, path: Path) -> list[DataTestCase]:
         """Load test cases from a CSV file."""
-        cases: list[TestCase] = []
+        cases: list[DataTestCase] = []
         with open(path, "r", newline="") as f:
             reader = csv.DictReader(f)
             for row in reader:
@@ -118,7 +118,7 @@ class DatasetManager:
                     else []
                 )
                 cases.append(
-                    TestCase(
+                    DataTestCase(
                         input=row["input"],
                         expected_output=row["expected_output"],
                         must_pass=must_pass,
@@ -127,14 +127,14 @@ class DatasetManager:
                 )
         return cases
 
-    def _validate(self, cases: list[TestCase]) -> list[TestCase]:
+    def _validate(self, cases: list[DataTestCase]) -> list[DataTestCase]:
         """Validate and deduplicate test cases."""
         if not cases:
             raise ValueError("Dataset is empty")
 
         # Remove duplicates by (input, expected_output)
         seen: set[tuple[str, str]] = set()
-        unique: list[TestCase] = []
+        unique: list[DataTestCase] = []
         for case in cases:
             if not case.input.strip():
                 continue  # Skip empty inputs
