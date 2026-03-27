@@ -61,25 +61,57 @@ body {
   border: 1px solid var(--border);
 }
 
+/* ── Utilities ─────────────────────────────────────────────────── */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-top: 1px solid var(--glass-highlight);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
 /* ── Buttons ─────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: 0.625rem 1.25rem;
-  background: var(--accent);
-  color: var(--text);
+  padding: 0.625rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  color: #fff;
   border: none;
   border-radius: var(--radius-sm);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875rem;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: var(--transition-bounce);
   text-decoration: none;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.5s ease;
 }
 
 .btn-primary:hover {
-  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover::after {
+  left: 100%;
 }
 
 .btn-ghost {
@@ -94,13 +126,16 @@ body {
   font-weight: 500;
   font-size: 0.875rem;
   cursor: pointer;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: var(--transition-smooth);
   text-decoration: none;
+  position: relative;
 }
 
 .btn-ghost:hover {
   color: var(--text);
-  border-color: var(--accent);
+  border-color: var(--accent-light);
+  background: rgba(124, 58, 237, 0.05);
+  box-shadow: 0 0 10px rgba(167, 139, 250, 0.1);
 }
 
 /* ── Table ────────────────────────────────────────────────────── */
@@ -125,6 +160,7 @@ body {
   padding: 0.875rem var(--space-4);
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.875rem;
+  transition: background 0.2s ease;
 }
 
 .data-table tr:hover td {
@@ -133,8 +169,8 @@ body {
 
 /* ── TestCaseFeed row entry animation ────────────────────────── */
 @keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ── Spinner ─────────────────────────────────────────────────── */
