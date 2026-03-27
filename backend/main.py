@@ -310,7 +310,7 @@ async def stop_run(run_id: str):
         raise HTTPException(status_code=404, detail=f"Run '{run_id}' not found")
     if run_id in active_runs:
         active_runs[run_id]["cancelled"] = True
-    await audit_log.finish_run(run_id, "error")
+    await audit_log.finish_run(run_id, "stopped")
     return {"success": True}
 
 

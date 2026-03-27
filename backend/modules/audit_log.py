@@ -153,10 +153,10 @@ class AuditLog:
             await db.execute(
                 """UPDATE runs SET
                    total_iterations = ?,
-                   best_score = MAX(best_score, ?),
+                   best_score = CASE WHEN ? > best_score THEN ? ELSE best_score END,
                    best_version = CASE WHEN ? > best_score THEN ? ELSE best_version END
                    WHERE run_id = ?""",
-                (version + 1, score, score, version, run_id),
+                (version + 1, score, score, score, version, run_id),
             )
             await db.commit()
 
@@ -226,7 +226,8 @@ class AuditLog:
             db.row_factory = aiosqlite.Row
             cursor = await db.execute(
                 """SELECT run_id, task_id, status, total_iterations,
-                          best_score, best_version, started_at, finished_at
+                          best_score, best_version, accuracy_target, llm_provider,
+                          started_at, finished_at
                    FROM runs ORDER BY started_at DESC LIMIT ?""",
                 (limit,),
             )
