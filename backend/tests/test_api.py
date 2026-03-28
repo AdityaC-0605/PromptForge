@@ -15,7 +15,7 @@ class TestAPI:
         resp = client.get("/")
         assert resp.status_code == 200
         data = resp.json()
-        assert "APE" in data["name"]
+        assert "PromptForge" in data["name"]
 
     def test_list_tasks(self, client):
         resp = client.get("/api/tasks")

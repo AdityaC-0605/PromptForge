@@ -3,7 +3,7 @@
 import json
 
 import pytest
-from backend.modules.dataset_manager import DatasetManager, TestCase
+from backend.modules.dataset_manager import DatasetManager, DataTestCase
 
 
 @pytest.fixture
@@ -54,7 +54,7 @@ class TestDatasetManager:
         dm = DatasetManager(datasets_dir=tmp_datasets)
         cases = dm.load_all("test_dataset.json")
         assert len(cases) == 10
-        assert all(isinstance(c, TestCase) for c in cases)
+        assert all(isinstance(c, DataTestCase) for c in cases)
 
     def test_deduplication(self, tmp_datasets):
         # Create dataset with duplicates

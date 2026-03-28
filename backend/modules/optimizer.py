@@ -122,10 +122,10 @@ class Optimizer:
         """Remove markdown code fences and other wrapper artifacts."""
         prompt = prompt.strip()
 
-        # Remove ```...``` wrapping
+        # Remove ```[lang]\n...\n``` wrapping
         if prompt.startswith("```") and prompt.endswith("```"):
             lines = prompt.split("\n")
-            # Remove first and last lines (the fences)
+            # Remove first line (fence + optional language tag) and last line (closing fence)
             lines = lines[1:-1]
             prompt = "\n".join(lines).strip()
 
