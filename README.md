@@ -99,6 +99,8 @@ Task Definition + Test Cases
 ## Features
 
 - **Live run dashboard** — three-column view with real-time score ring, prompt diff, test case feed, and failure charts streaming over WebSocket
+- **Premium design system** — modern glassmorphism UI with vibrant hover effects, smooth transitions, and glowing components
+- **Web-based run configuration** — easily start new prompt optimization runs right from your browser
 - **LCS-based prompt diff** — line-by-line diff of every prompt version with added/removed highlighting
 - **Score ring** — color-coded accuracy gauge (red < 60%, amber 60–84%, green ≥ 85%) with target tick mark
 - **Run history** — filterable table of all past runs with inline sparklines and per-row actions
@@ -129,6 +131,10 @@ Task Definition + Test Cases
 | `WS` | `/ws/run/{id}` | Live updates via WebSocket |
 
 ### Start a Run
+
+The easiest way to start a new optimization run is via the Web Dashboard at `http://localhost:3000/dashboard` by filling out the "New Run" form. 
+
+Alternatively, you can trigger a run directly via the API:
 
 ```bash
 curl -X POST http://localhost:8000/api/runs \
@@ -275,6 +281,7 @@ Property-based tests (fast-check) cover:
 |-----------|------|
 | Backend | FastAPI + Python 3.11 |
 | Frontend | Next.js 16 + React 19 + TypeScript |
+| Styling | TailwindCSS v4 + Custom Glassmorphism CSS |
 | Charting | Recharts |
 | Icons | lucide-react |
 | Property testing | fast-check + Vitest |
