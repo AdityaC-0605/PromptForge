@@ -94,12 +94,12 @@ export default function PromptDiff({ oldPrompt, newPrompt, showLineNumbers = tru
         if (op.type === 'add') {
           className = 'diff-added';
           prefix = '+';
-          rowStyle = { background: '#f0fdf4', color: '#15803d' };
+          rowStyle = { background: 'rgba(0, 210, 160, 0.1)', color: 'var(--green)' };
           newLineNum++;
         } else if (op.type === 'remove') {
           className = 'diff-removed';
           prefix = '-';
-          rowStyle = { background: '#fef2f2', color: '#b91c1c' };
+          rowStyle = { background: 'rgba(255, 107, 107, 0.1)', color: 'var(--red)' };
           oldLineNum++;
         } else {
           className = 'diff-unchanged';

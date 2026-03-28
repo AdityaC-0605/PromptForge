@@ -64,6 +64,7 @@ const STATUS_LABELS: Record<string, string> = {
   completed: 'Completed',
   running: 'Running',
   early_stopped: 'Early Stopped',
+  stopped: 'Stopped',
   error: 'Error',
   max_iterations: 'Max Iterations',
 };
@@ -146,7 +147,7 @@ interface FilterBarProps {
 
 function FilterBar({ runs, filters, onChange }: FilterBarProps) {
   const taskIds = Array.from(new Set(runs.map(r => r.task_id))).sort();
-  const allStatuses: RunStatus[] = ['completed', 'running', 'early_stopped', 'error', 'max_iterations'];
+  const allStatuses: RunStatus[] = ['completed', 'running', 'early_stopped', 'stopped', 'error', 'max_iterations'];
 
   const toggleStatus = (s: RunStatus) => {
     const next = filters.statuses.includes(s)

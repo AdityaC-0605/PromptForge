@@ -16,6 +16,7 @@ const STATUS_COLORS: Record<RunStatus, { bg: string; color: string }> = {
   running:       { bg: '#166534', color: '#bbf7d0' },
   completed:     { bg: '#1e3a5f', color: '#bfdbfe' },
   early_stopped: { bg: '#713f12', color: '#fef08a' },
+  stopped:       { bg: '#713f12', color: '#fef08a' },
   error:         { bg: '#7f1d1d', color: '#fecaca' },
   max_iterations:{ bg: '#3b0764', color: '#e9d5ff' },
 };
@@ -24,6 +25,7 @@ const STATUS_LABELS: Record<RunStatus, string> = {
   running:        'Running',
   completed:      'Completed',
   early_stopped:  'Early Stopped',
+  stopped:        'Stopped',
   error:          'Error',
   max_iterations: 'Max Iterations',
 };
